@@ -1,0 +1,34 @@
+from pyrogram import filters, Client
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from AarohiX import app as bot
+import requests
+from config import BOT_USERNAME
+from AarohiX.utils.errors import capture_err
+
+start_txt = """**
+✦ ʜᴇʏ ᴛʜᴇʀᴇ, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ᴜʜʜ !
+
+❅ ɪ ᴀᴍ  ༗ ᴍ ᴜ s ɪ ᴄ ʙᴏᴛ.
+
+❅ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴋʀɪꜱʜ ༗ ʙᴏᴛ ʀᴇᴘᴏ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʀᴇᴘᴏ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ.
+"""
+
+
+
+@app.on_message(filters.command("repo"))
+async def start(_, msg):
+    buttons = [
+        [
+          InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/krishoffical2"),
+          InlineKeyboardButton("ʀᴇᴘᴏ", url="https://t.me/its_krish_tg"),
+          ],
+    ]
+    
+    reply_markup = InlineKeyboardMarkup(buttons)
+    
+    await msg.reply_photo(
+        photo="https://telegra.ph/file/d2081243af7c1d7578b7b.jpg",
+        caption=start_txt,
+        reply_markup=reply_markup
+    )
+    
