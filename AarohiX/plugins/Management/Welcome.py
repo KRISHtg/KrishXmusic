@@ -1,5 +1,5 @@
-#<<<<<<<<<<<<<<DiL>>>>>>>>>>>>>>#
-#<<<<<<<<<<<<<<Give<Credit<Else>You>Chutiya>>>>>>>>>>>>>>#
+#<<<<<<<<<<<<<<Krish>>>>>>>>>>>>>>#
+#<<<<<<<<<<<<<<>>>>>>>>>>>>>>#
 import os
 from PIL import ImageDraw, Image, ImageFont, ImageChops
 from pyrogram import *
@@ -46,7 +46,7 @@ def circle(pfp, size=(500, 500)):
 
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("AarohiX/assets/krish3.png")
+    background = Image.open("AarohiX/assets/Krishop2.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((1157, 1158))
