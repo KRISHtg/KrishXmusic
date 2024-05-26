@@ -57,7 +57,8 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = first_page(_)
-            await message.reply_sticker("CAACAgUAAx0CcSyO9gACl7dkQoL0p1vXqcYtCuCHmSyh4Hi1UgACEwgAAonAEVYwaJ0Jkk8L0B4E")
+            await message.reply_sticker(sticker=random.choice(STICKERS))
+            asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
             return await message.reply_photo(
                 random.choice(YUMI_PICS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
@@ -110,7 +111,8 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_sticker("CAACAgUAAx0CcSyO9gACl7dkQoL0p1vXqcYtCuCHmSyh4Hi1UgACEwgAAonAEVYwaJ0Jkk8L0B4E")
+      await message.reply_sticker(sticker=random.choice(STICKERS))
+        asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
         await message.reply_photo(
                 random.choice(YUMI_PICS),
             caption=_["start_2"].format(message.from_user.mention, app.mention),
