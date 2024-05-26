@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AarohiX import LOGGER, app, userbot
-from AarohiX.core.call import VIP
+from AarohiX.core.call import Dil
 from AarohiX.misc import sudo
 from AarohiX.plugins import ALL_MODULES
 from AarohiX.utils.database import get_banned_users, get_gbanned
