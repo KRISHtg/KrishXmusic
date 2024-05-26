@@ -1,13 +1,13 @@
 import random
 import string
-
+import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
-
+from AarohiX.utils.database import get_assistant
 import config
 from AarohiX import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AarohiX.core.call import Dil
+from AarohiX.core.call import JARVIS
 from AarohiX.utils import seconds_to_min, time_to_seconds
 from AarohiX.utils.channelplay import get_channeplayCB
 from AarohiX.utils.decorators.language import languageCB
@@ -20,24 +20,22 @@ from AarohiX.utils.inline import (
     slider_markup,
     track_markup,
 )
+from AarohiX.utils.database import (
+    add_served_chat,
+    add_served_user,
+    blacklisted_chats,
+    get_lang,
+    is_banned_user,
+    is_on_off,
+)
 from AarohiX.utils.logger import play_logs
 from AarohiX.utils.stream.stream import stream
-from config import BANNED_USERS, lyrical
+from config import BANNED_USERS, lyrical, AYU
 
 
 @app.on_message(
-    filters.command(
-        [
-            "play",
-            "vplay",
-            "cplay",
-            "cvplay",
-            "playforce",
-            "vplayforce",
-            "cplayforce",
-            "cvplayforce",
-        ]
-    )
+   filters.command(["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"] ,prefixes=["/", "!"])
+            
     & filters.group
     & ~BANNED_USERS
 )
@@ -54,7 +52,7 @@ async def play_commnd(
     fplay,
 ):
     mystic = await message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
+        _["play_2"].format(channel) if channel else random.choice(AYU)
     )
     plist_id = None
     slider = None
@@ -67,6 +65,7 @@ async def play_commnd(
         if message.reply_to_message
         else None
     )
+
     video_telegram = (
         (message.reply_to_message.video or message.reply_to_message.document)
         if message.reply_to_message
@@ -163,7 +162,8 @@ async def play_commnd(
                         config.PLAYLIST_FETCH_LIMIT,
                         message.from_user.id,
                     )
-                except:
+                except Exception as e:
+                    print(e)
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "yt"
@@ -172,7 +172,7 @@ async def play_commnd(
                 else:
                     plist_id = url.split("=")[1]
                 img = config.PLAYLIST_IMG_URL
-                cap = _["play_9"]
+                cap = _["play_10"]
             elif "https://youtu.be" in url:
                 videoid = url.split("/")[-1].split("?")[0]
                 details, track_id = await YouTube.track(f"https://www.youtube.com/watch?v={videoid}")
@@ -181,7 +181,23 @@ async def play_commnd(
                 cap = _["play_11"].format(
                     details["title"],
                     details["duration_min"],
-                )    
+                )
+            elif "youtube.com/@" in url:
+            # Check if the URL is a YouTube channel link or user link
+                try:
+                    video_urls = fetch_channel_videos(url)
+                    for video_url in video_urls:
+                        # Add each video URL to the queue for playback
+                        details, track_id = await YouTube.track(video_url)
+                        streamtype = "playlist"
+                        img = details["thumb"]
+                        cap = _["play_10"].format(details["title"], details["duration_min"])
+                        await queue_video_for_playback(video_url, details, track_id, streamtype, img, cap)
+
+                    await mystic.edit_text("All videos from the channel have been added to the queue.")
+                except Exception as e:
+                    print(e)  # Handle or log the error appropriately
+                    await mystic.edit_text(_["play_3"])  # Error message for the user
             else:
                 try:
                     details, track_id = await YouTube.track(url)
@@ -297,7 +313,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Dil.stream_call(url)
+                await JARVIS.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
@@ -463,7 +479,7 @@ async def play_music(client, CallbackQuery, _):
     except:
         pass
     mystic = await CallbackQuery.message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
+        _["play_2"].format(channel) if channel else random.choice(AYU)
     )
     try:
         details, track_id = await YouTube.track(vidid, True)
@@ -510,163 +526,4 @@ async def play_music(client, CallbackQuery, _):
     return await mystic.delete()
 
 
-@app.on_callback_query(filters.regex("AnonymousAdmin") & ~BANNED_USERS)
-async def anonymous_check(client, CallbackQuery):
-    try:
-        await CallbackQuery.answer(
-            "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
-            show_alert=True,
-        )
-    except:
-        pass
-
-
-@app.on_callback_query(filters.regex("DilPlaylists") & ~BANNED_USERS)
-@languageCB
-async def play_playlists_command(client, CallbackQuery, _):
-    callback_data = CallbackQuery.data.strip()
-    callback_request = callback_data.split(None, 1)[1]
-    (
-        videoid,
-        user_id,
-        ptype,
-        mode,
-        cplay,
-        fplay,
-    ) = callback_request.split("|")
-    if CallbackQuery.from_user.id != int(user_id):
-        try:
-            return await CallbackQuery.answer(_["playcb_1"], show_alert=True)
-        except:
-            return
-    try:
-        chat_id, channel = await get_channeplayCB(_, cplay, CallbackQuery)
-    except:
-        return
-    user_name = CallbackQuery.from_user.first_name
-    await CallbackQuery.message.delete()
-    try:
-        await CallbackQuery.answer()
-    except:
-        pass
-    mystic = await CallbackQuery.message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
-    )
-    videoid = lyrical.get(videoid)
-    video = True if mode == "v" else None
-    ffplay = True if fplay == "f" else None
-    spotify = True
-    if ptype == "yt":
-        spotify = False
-        try:
-            result = await YouTube.playlist(
-                videoid,
-                config.PLAYLIST_FETCH_LIMIT,
-                CallbackQuery.from_user.id,
-                True,
-            )
-        except:
-            return await mystic.edit_text(_["play_3"])
-    if ptype == "spplay":
-        try:
-            result, spotify_id = await Spotify.playlist(videoid)
-        except:
-            return await mystic.edit_text(_["play_3"])
-    if ptype == "spalbum":
-        try:
-            result, spotify_id = await Spotify.album(videoid)
-        except:
-            return await mystic.edit_text(_["play_3"])
-    if ptype == "spartist":
-        try:
-            result, spotify_id = await Spotify.artist(videoid)
-        except:
-            return await mystic.edit_text(_["play_3"])
-    if ptype == "apple":
-        try:
-            result, apple_id = await Apple.playlist(videoid, True)
-        except:
-            return await mystic.edit_text(_["play_3"])
-    try:
-        await stream(
-            _,
-            mystic,
-            user_id,
-            result,
-            chat_id,
-            user_name,
-            CallbackQuery.message.chat.id,
-            video,
-            streamtype="playlist",
-            spotify=spotify,
-            forceplay=ffplay,
-        )
-    except Exception as e:
-        ex_type = type(e).__name__
-        err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
-        return await mystic.edit_text(err)
-    return await mystic.delete()
-
-
-@app.on_callback_query(filters.regex("slider") & ~BANNED_USERS)
-@languageCB
-async def slider_queries(client, CallbackQuery, _):
-    callback_data = CallbackQuery.data.strip()
-    callback_request = callback_data.split(None, 1)[1]
-    (
-        what,
-        rtype,
-        query,
-        user_id,
-        cplay,
-        fplay,
-    ) = callback_request.split("|")
-    if CallbackQuery.from_user.id != int(user_id):
-        try:
-            return await CallbackQuery.answer(_["playcb_1"], show_alert=True)
-        except:
-            return
-    what = str(what)
-    rtype = int(rtype)
-    if what == "F":
-        if rtype == 9:
-            query_type = 0
-        else:
-            query_type = int(rtype + 1)
-        try:
-            await CallbackQuery.answer(_["playcb_2"])
-        except:
-            pass
-        title, duration_min, thumbnail, vidid = await YouTube.slider(query, query_type)
-        buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
-        med = InputMediaPhoto(
-            media=thumbnail,
-            caption=_["play_10"].format(
-                title.title(),
-                duration_min,
-            ),
-        )
-        return await CallbackQuery.edit_message_media(
-            media=med, reply_markup=InlineKeyboardMarkup(buttons)
-        )
-    if what == "B":
-        if rtype == 0:
-            query_type = 9
-        else:
-            query_type = int(rtype - 1)
-        try:
-            await CallbackQuery.answer(_["playcb_2"])
-        except:
-            pass
-        title, duration_min, thumbnail, vidid = await YouTube.slider(query, query_type)
-        buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
-        med = InputMediaPhoto(
-            media=thumbnail,
-            caption=_["play_10"].format(
-                title.title(),
-                duration_min,
-            ),
-        )
-        return await CallbackQuery.edit_message_media(
-            media=med, reply_markup=InlineKeyboardMarkup(buttons)
-        )
+@app.on_callback_query(filters.regex("
