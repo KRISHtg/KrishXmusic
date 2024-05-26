@@ -1,4 +1,4 @@
-from AarohiX.core.bot import VIP
+from AarohiX.core.bot import Dil
 from AarohiX.core.dir import dirr
 from AarohiX.core.git import git
 from AarohiX.core.userbot import Userbot
