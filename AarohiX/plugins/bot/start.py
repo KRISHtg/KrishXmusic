@@ -63,7 +63,7 @@ async def start_pm(client, message: Message, _):
             asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
             return await message.reply_photo(
                 await message.reply_photo(
-                random.choice(ANNIE),,
+                random.choice(ANNIE),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
