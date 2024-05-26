@@ -24,6 +24,8 @@ from AarohiX.utils.inline import first_page, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
+
+
 ANNIE = [
     "hhttps://te.legra.ph/file/dea69b6de713db64628d5.jpg",
     "https://te.legra.ph/file/cbdc7b55600c7f7c982be.jpg",
@@ -49,22 +51,23 @@ async def delete_sticker_after_delay(message, delay):
     await asyncio.sleep(delay)
     await message.delete()
 
-@app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
+app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
 @LanguageStart
 async def start_pm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
-            keyboard = help_pannel(_)
+            keyboard = first_page(_)
             sticker_message = await message.reply_sticker(sticker=random.choice(STICKERS))
             asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
             return await message.reply_photo(
-                random.choice(ANNIE),
+                await message.reply_photo(
+                random.choice(ANNIE),,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
-            if name[0:3] == "sud":
+        if name[0:3] == "sud":
             await sudoers_list(client=client, message=message, _=_)
             if await is_on_off(2):
                 return await app.send_message(
@@ -73,7 +76,7 @@ async def start_pm(client, message: Message, _):
                 )
             return
         if name[0:3] == "inf":
-            m = await message.reply_text("🔎")
+            m = await message.reply_text("**» sᴇᴀʀᴄʜɪɴɢ ʙᴀʙʏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -97,7 +100,6 @@ async def start_pm(client, message: Message, _):
                     ],
                 ]
             )
-        
             await m.delete()
             await app.send_photo(
                 chat_id=message.chat.id,
@@ -114,12 +116,10 @@ async def start_pm(client, message: Message, _):
         out = private_panel(_)
         sticker_message = await message.reply_sticker(sticker=random.choice(STICKERS))
         asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
-        served_chats = len(await get_served_chats())
-        served_users = len(await get_served_users())
-        UP, CPU, RAM, DISK = await bot_sys_stats()
         await message.reply_photo(
-            random.choice(ANNIE),
-            caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM,served_users,served_chats),
+            await message.reply_photo(
+                random.choice(ANNIE),,
+            caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(2):
@@ -134,7 +134,7 @@ async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
     await message.reply_photo(
-        random.choice(ANNIE),
+                random.choice(ANNIE),,
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
@@ -168,7 +168,7 @@ async def welcome(client, message: Message):
 
                 out = start_panel(_)
                 await message.reply_photo(
-                    random.choice(ANNIE),
+                random.choice(ANNIE),,
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
