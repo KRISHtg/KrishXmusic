@@ -24,8 +24,6 @@ from AarohiX.utils.inline import first_page, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
-
-
 YUMI_PICS = [
     "hhttps://te.legra.ph/file/dea69b6de713db64628d5.jpg",
     "https://te.legra.ph/file/cbdc7b55600c7f7c982be.jpg",
@@ -59,11 +57,9 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = first_page(_)
-            sticker_message = await message.reply_sticker(sticker=random.choice(STICKERS))
-            asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
+            await message.reply_sticker("CAACAgUAAx0CcSyO9gACl7dkQoL0p1vXqcYtCuCHmSyh4Hi1UgACEwgAAonAEVYwaJ0Jkk8L0B4E")
             return await message.reply_photo(
-                await message.reply_photo(
-                random.choice(ANNIE),
+                random.choice(YUMI_PICS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
@@ -73,7 +69,7 @@ async def start_pm(client, message: Message, _):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
                     text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>sᴜᴅᴏʟɪsᴛ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
-            )
+                )
             return
         if name[0:3] == "inf":
             m = await message.reply_text("**» sᴇᴀʀᴄʜɪɴɢ ʙᴀʙʏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ")
@@ -114,11 +110,9 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        sticker_message = await message.reply_sticker(sticker=random.choice(STICKERS))
-        asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
+        await message.reply_sticker("CAACAgUAAx0CcSyO9gACl7dkQoL0p1vXqcYtCuCHmSyh4Hi1UgACEwgAAonAEVYwaJ0Jkk8L0B4E")
         await message.reply_photo(
-            await message.reply_photo(
-                random.choice(ANNIE),,
+                random.choice(YUMI_PICS),
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
@@ -128,17 +122,19 @@ async def start_pm(client, message: Message, _):
                 text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
             )
 
+
 @app.on_message(filters.command(["start"]) & filters.group & ~BANNED_USERS)
 @LanguageStart
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
     await message.reply_photo(
-                random.choice(ANNIE),,
+                random.choice(YUMI_PICS),
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
     return await add_served_chat(message.chat.id)
+
 
 @app.on_message(filters.new_chat_members, group=-1)
 async def welcome(client, message: Message):
@@ -168,8 +164,19 @@ async def welcome(client, message: Message):
 
                 out = start_panel(_)
                 await message.reply_photo(
-                random.choice(ANNIE),,
+                random.choice(YUMI_PICS),
                     caption=_["start_3"].format(
+                        message.from_user.first_name,
+                        app.mention,
+                        message.chat.title,
+                        app.mention,
+                    ),
+                    reply_markup=InlineKeyboardMarkup(out),
+                )
+                await add_served_chat(message.chat.id)
+                await message.stop_propagation()
+        except Exception as ex:
+            print(ex)                    caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
                         message.chat.title,
