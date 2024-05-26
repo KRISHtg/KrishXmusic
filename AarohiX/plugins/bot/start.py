@@ -1,9 +1,8 @@
-import asyncio
-import random
 import time
+import random
 from pyrogram import filters
 from pyrogram.enums import ChatType
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto, Message
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
@@ -16,15 +15,13 @@ from AarohiX.utils.database import (
     add_served_user,
     blacklisted_chats,
     get_lang,
-    get_served_chats,
-    get_served_users,
     is_banned_user,
     is_on_off,
 )
 from AarohiX.utils.decorators.language import LanguageStart
 from AarohiX.utils.formatters import get_readable_time
-from AarohiX.utils.inline import help_pannel, private_panel, start_panel
-from config import BANNED_USERS, AYUV
+from AarohiX.utils.inline import first_page, private_panel, start_panel
+from config import BANNED_USERS
 from strings import get_string
 
 ANNIE_VID = [
