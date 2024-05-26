@@ -166,17 +166,6 @@ async def welcome(client, message: Message):
                 await message.reply_photo(
                 random.choice(YUMI_PICS),
                     caption=_["start_3"].format(
-                        message.from_user.first_name,
-                        app.mention,
-                        message.chat.title,
-                        app.mention,
-                    ),
-                    reply_markup=InlineKeyboardMarkup(out),
-                )
-                await add_served_chat(message.chat.id)
-                await message.stop_propagation()
-        except Exception as ex:
-            print(ex)                    caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
                         message.chat.title,
@@ -188,6 +177,3 @@ async def welcome(client, message: Message):
                 await message.stop_propagation()
         except Exception as ex:
             print(ex)
-
-
-                                
