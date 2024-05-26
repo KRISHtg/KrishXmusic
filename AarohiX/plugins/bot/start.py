@@ -23,7 +23,7 @@ from AarohiX.utils.database import (
 )
 from AarohiX.utils.decorators.language import LanguageStart
 from AarohiX.utils.formatters import get_readable_time
-from AarohiX.utils.inline import help_pannel, private_panel, start_panel
+from AarohiX.utils.inline import first_page, private_panel, start_panel
 from config import BANNED_USERS, AYUV
 from strings import get_string
 
