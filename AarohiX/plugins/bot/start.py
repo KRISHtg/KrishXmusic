@@ -21,7 +21,7 @@ from AarohiX.utils.database import (
 from AarohiX.utils.decorators.language import LanguageStart
 from AarohiX.utils.formatters import get_readable_time
 from AarohiX.utils.inline import first_page, private_panel, start_panel
-from config import BANNED_USERS
+from config import BANNED_USERS, AYUV
 from strings import get_string
 
 YUMI_PICS = [
@@ -115,7 +115,7 @@ async def start_pm(client, message: Message, _):
         asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
         await message.reply_photo(
                 random.choice(YUMI_PICS),
-            caption=_["start_2"].format(message.from_user.mention, app.mention),
+            caption=random.choice(AYUV).format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM, served_users, served_chats),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(2):
