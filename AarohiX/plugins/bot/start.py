@@ -111,7 +111,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-      await message.reply_sticker(sticker=random.choice(STICKERS))
+      sticker_message = await message.reply_sticker(sticker=random.choice(STICKERS))
         asyncio.create_task(delete_sticker_after_delay(sticker_message, 2))  # Delete sticker after 2 seconds
         await message.reply_photo(
                 random.choice(YUMI_PICS),
