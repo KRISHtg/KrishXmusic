@@ -4,7 +4,7 @@ import random
 import requests
 from AarohiX import app 
 
-SUPPORT_CHAT = "Prcious_Friend_Group"
+SUPPORT_CHAT = "krishoffical2"
 
 @app.on_message(filters.command("wish"))
 async def wish(_, m):
