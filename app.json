@@ -54,7 +54,7 @@
       },
         "DEEP_API": {
             "description": "Your DEEP API key from https://deepai.org/",
-            "value": "64c800c5-3655-4341-94f9-0329b2d92419",
+            "value": "",
             "required": false
       },
       "LOGGER_ID": {
