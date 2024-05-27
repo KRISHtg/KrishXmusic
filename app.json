@@ -52,6 +52,12 @@
         "value": "",
         "required": false
       },
+        "DEEP_API": {
+            "description": "Your DEEP API key from https://deepai.org/",
+            "value": "",
+            "required": false
+        }
+      },
       "LOGGER_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
         "value": "",
