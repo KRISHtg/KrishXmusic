@@ -46,7 +46,7 @@ def circle(pfp, size=(500, 500)):
 
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("AarohiX/assets/Krish6.png")
+    background = Image.open("AarohiX/assets/Kgf.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((1157, 1158))
@@ -125,12 +125,11 @@ async def greet_group(_, member: ChatMemberUpdated):
 ❤️ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐈𝐧 𝐍𝐞𝐰 𝐆𝐫𝐨𝐮𝐩 ❣️
 ➖➖➖➖➖➖➖➖➖➖➖➖
 🏘{member.chat.title}🥳
-╔══════════════════
-╠● 𝐍ᴀᴍᴇ ➥ {user.mention} 
-╠● 𝐔ꜱᴇʀɴᴀᴍᴇ ➥ @{user.username} 
-╚══════════════════
-┏━━━━━━━━━━━━━━━          
-┣ 🥀🌹ʀᴜʟᴇs💐🌹🥀
+➖➖➖➖➖➖➖➖➖➖➖➖
+● 𝐍ᴀᴍᴇ ➥ {user.mention} 
+● 𝐔ꜱᴇʀɴᴀᴍᴇ ➥ @{user.username} 
+
+┏━━━━━━━━━━━━━━━
 ┣ 𝟏 ➥ ᴅᴏɴᴛ ᴀʙᴜsɪɴɢ 
 ┣ 𝟐 ➥ ᴅᴏɴᴛ sᴘᴀᴍ 
 ┣ 𝟑 ➥ ʟɪɴᴋ ɴᴏᴛ ᴀʟʟᴏᴡ 
@@ -138,7 +137,7 @@ async def greet_group(_, member: ChatMemberUpdated):
 ┣ 𝟓 ➥ 𝐆ɪᴠᴇ  ʀᴇsᴘᴇᴄᴛ , ᴛᴀᴋᴇ  ʀᴇsᴘᴇᴄᴛ 
 ┗━━━━━━━━━━━━━━━━━      
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ 𝐊𝐑𝐈𝐒𝐇
+❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [𝐐ᴜᴇᴇɴ ✘ 𝐌ᴜꜱɪᴄ](https://t.me/Queen_of_heart_music_bot)
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/Queen_of_heart_music_bot?startgroup=true")]])
         )
