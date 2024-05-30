@@ -107,11 +107,11 @@ async def get_thumb(videoid):
     enhancer = ImageEnhance.Brightness(background)
     background = enhancer.enhance(0.6)
     draw = ImageDraw.Draw(background)
-    arial = ImageFont.truetype("AarohiX/assets/font2.ttf", 30)
-    font = ImageFont.truetype("AarohiX/assets/font.ttf", 30)
-    title_font = ImageFont.truetype("AarohiX/assets/font3.ttf", 45)
+    arial = ImageFont.truetype("AarohiX/assets/assets/font2.ttf", 30)
+    font = ImageFont.truetype("AarohiX/assets/assets/font.ttf", 30)
+    title_font = ImageFont.truetype("AarohiX/assets/assets/font3.ttf", 45)
 
-    
+
     circle_thumbnail = crop_center_circle(youtube, 400, 20)
     circle_thumbnail = circle_thumbnail.resize((400, 400))
     circle_position = (120, 160)
@@ -123,7 +123,6 @@ async def get_thumb(videoid):
     draw.text((text_x_position, 180), title1[0], fill=(255, 255, 255), font=title_font)
     draw.text((text_x_position, 230), title1[1], fill=(255, 255, 255), font=title_font)
     draw.text((text_x_position, 320), f"{channel}  |  {views[:23]}", (255, 255, 255), font=arial)
-    draw.text((10, 10), f"KRISH MUSIC", fill="white", font=font)
 
     
     line_length = 580  
@@ -150,7 +149,7 @@ async def get_thumb(videoid):
     draw.text((text_x_position, 400), "00:00", (255, 255, 255), font=arial)
     draw.text((1080, 400), duration, (255, 255, 255), font=arial)
 
-    play_icons = Image.open("AarohiX/assets/play_icons.png")
+    play_icons = Image.open("AarohiX/assets/assets/play_icons.png")
     play_icons = play_icons.resize((580, 62))
     background.paste(play_icons, (text_x_position, 450), play_icons)
 
@@ -160,4 +159,3 @@ async def get_thumb(videoid):
         pass
     background.save(f"cache/{videoid}_v4.png")
     return f"cache/{videoid}_v4.png"
-    
