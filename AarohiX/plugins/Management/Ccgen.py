@@ -42,7 +42,7 @@ async def gen_cc(client, message):
 ╰✠╼━━━━━━❖━━━━━━━✠╯
 
 ⦿ Bɪɴ: `{resp.results[0].bin}`
-⦿ Tɪᴍᴇ Tᴏᴏᴋ: {resp.took}\n\n @Alone_Dil_bot""",
+⦿ Tɪᴍᴇ Tᴏᴏᴋ: {resp.took}\n\n @Queen_of_heart_music_bot""",
             reply_markup=keyboard,
         )
 
@@ -70,7 +70,7 @@ async def regenerate_cc(client, callback_query):
 ╰✠╼━━━━━━❖━━━━━━━✠╯
 
 ⦿ Bɪɴ: `{resp.results[0].bin}`
-⦿ Tɪᴍᴇ Tᴏᴏᴋ: {resp.took}\n\n @Alone_Dil_bot""",
+⦿ Tɪᴍᴇ Tᴏᴏᴋ: {resp.took}\n\n @Queen_of_heart_music_bot""",
         )
 
     except Exception as e:
