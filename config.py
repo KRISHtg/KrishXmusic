@@ -42,7 +42,7 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/krishoffical2")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+w9QphPiwqIQ5Y2Zl")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+rCTz82Fv96NhMzc9")
 
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
