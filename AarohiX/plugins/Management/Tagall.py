@@ -1,80 +1,69 @@
-from asyncio import sleep
-from random import choice
-from pyrogram import Client, filters
-from pyrogram.types import Message
-from ... import app, SUDO_USER, spam_chats
-from ... import *
+import asyncio
+from pyrogram.enums import ChatType, ChatMemberStatus
+from AarohiX import app
+from pyrogram import filters
+from AarohiX.utils.admin_check import admin_filter
 
-def get_arg(message: Message):
-    msg = message.text
-    msg = msg.replace(" ", "", 1) if msg[1] == " " else msg
-    split = msg[1:].replace("\n", " \n").split(" ")
-    if " ".join(split[1:]).strip() == "":
-        return ""
-    return " ".join(split[1:])
 
-@app.on_message(
-    filters.command(["all", "utag" , "mention", "mentionall"], prefixes=["/", "@", ".", "#"])
-    & admin_filter
-)
-    chat_id = message.chat.id
-    direp = message.reply_to_message
-    args = get_arg(message)
-    if not direp and not args:
-        return await message.edit("** ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴛᴀɢ ᴀʟʟ, ʟɪᴋᴇ »** `@utag Hi Friends`")
-    await message.delete()
-    spam_chats.append(chat_id)
-    usrnum = 0
-    usrtxt = ""
-    async for usr in client.get_chat_members(chat_id):
-        if not chat_id in spam_chats:
-            break
-        usrnum += 1
-        usrtxt += f"[{usr.user.first_name}](tg://user?id={usr.user.id}), "
-        if usrnum == 4:
-            if args:
-                txt = f"{args}\n\n{usrtxt}"
-                await client.send_message(chat_id, txt)
-            elif direp:
-                await direp.reply(usrtxt)
-            await sleep(2)
-            usrnum = 0
-            usrtxt = ""
-    try:
-        spam_chats.remove(chat_id)
-    except:
-        pass
 
-@app.on_message(
-    filters.command(
-        ["stoputag", "stopall", "offall", "offutag", "utagoff", "cancel"],
-        prefixes=["/", ".", "@", "#"],
-    )
-    & admin_filter
-)
-    if not message.chat.id in spam_chats:
-        return await message.edit("**It seems there is no tagall here.**")
-    else:
-        try:
-            spam_chats.remove(message.chat.id)
-        except:
+SPAM_CHATS = []
+
+
+@app.on_message(filters.command(["utag", "all"]) & filters.group & admin_filter)
+async def tag_all_users(_,message): 
+    replied = message.reply_to_message  
+    if len(message.command) < 2 and not replied:
+        await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴛᴀɢ ᴀʟʟ**") 
+        return                  
+    if replied:
+        SPAM_CHATS.append(message.chat.id)      
+        usernum= 0
+        usertxt = ""
+        async for m in app.get_chat_members(message.chat.id): 
+            if message.chat.id not in SPAM_CHATS:
+                break       
+            usernum += 5
+            usertxt += f" [{m.user.first_name}](tg://user?id={m.user.id})"
+            if usernum == 1:
+                await replied.reply_text(usertxt)
+                await asyncio.sleep(2)
+                usernum = 0
+                usertxt = ""
+        try :
+            SPAM_CHATS.remove(message.chat.id)
+        except Exception:
             pass
-        return await message.edit("**Cancelled.**")
-
-
-__NAME__ = "Tᴀɢᴀʟʟ"
-__MENU__ = """
-`.utag` - **.utag (message) - to start usertagger**
-`.cancel` - **to stop tagger**
-`.tagall` - **.tagall - to start tagall**
-`.tagallstop` - **to stop tagger**
-`.vctag` - **voice msg tagall**
-`.vctagstop` - **to stop tagger**
-.gntag` - **good night msg tagall**
-`.gntop` - **to stop tagger**
-`.gmtag` - **good morning tagall**
-`.gmstop` - **to stop tagger**
-`.shayari` - **good night msg tagall**
-`.shayaristop` - **to stop tagger**
-
-"""
+    else:
+        text = message.text.split(None, 1)[1]
+        
+        SPAM_CHATS.append(message.chat.id)
+        usernum= 0
+        usertxt = ""
+        async for m in app.get_chat_members(message.chat.id):       
+            if message.chat.id not in SPAM_CHATS:
+                break 
+            usernum += 1
+            usertxt += f" [{m.user.first_name}](tg://user?id={m.user.id})"
+            if usernum == 5:
+                await app.send_message(message.chat.id,f'{text}\n{usertxt}')
+                await asyncio.sleep(2)
+                usernum = 0
+                usertxt = ""                          
+        try :
+            SPAM_CHATS.remove(message.chat.id)
+        except Exception:
+            pass        
+           
+@app.on_message(filters.command("cancel") & ~filters.private)
+async def cancelcmd(_, message):
+    chat_id = message.chat.id
+    if chat_id in SPAM_CHATS:
+        try :
+            SPAM_CHATS.remove(chat_id)
+        except Exception:
+            pass   
+        return await message.reply_text("**ᴛᴀɢ ᴀʟʟ sᴜᴄᴄᴇssғᴜʟʟʏ sᴛᴏᴘᴘᴇᴅ!**")     
+                                     
+    else :
+        await message.reply_text("**ɴᴏ ᴘʀᴏᴄᴇss ᴏɴɢᴏɪɴɢ!**")  
+        return       
