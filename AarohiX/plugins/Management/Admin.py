@@ -4,12 +4,7 @@ from pyrogram import *
 from pyrogram.types import *
 from AarohiX.utils.admin_check import admin_filter
 
-strict_txt = [
-    "ᴅᴏsᴛ ᴋɪ ɢᴀᴀɴᴅ ɴʜɪ ᴍᴀᴀʀ sᴋᴛᴀ.",
-    "sᴀᴄʜ ᴍᴇ? ᴀᴘɴᴇ ᴅᴏsᴛ ᴋɪ ɢᴀᴀɴᴅ ᴍᴀᴀʀ ʟᴏᴏɴ.",
-    "ᴍᴀɪɴ ᴀᴘɴᴇ ʙᴇsᴛ ғʀɪᴇɴᴅ ᴋᴀ ʟᴜɴᴅ ɴʜɪ ᴋᴀᴀᴛ sᴋᴛᴀ.",
-    "ᴍᴀɪɴ ᴜsᴇ ᴊᴀᴀɴᴛᴀ ʜᴏᴏɴ. ᴍᴜᴊʜᴇ sᴀᴍᴀᴊʜɴᴇ ᴋᴀ ᴘʀʏᴀssʜ ᴋʀᴏ ɪsᴋɪ ᴍᴀᴀʀɪ ᴛᴏ ʀᴀɴᴅᴡᴀ ᴍᴀʀʀ ᴊᴀʏᴇɢᴀ."
-]
+strict_txt = [""]
 
 promote = ["promote", "adminship"]
 fullpromote = ["fullpromote", "fadmin"]
