@@ -30,7 +30,7 @@ close_button = InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data="close
 @Adisa.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
-        media=InputMediaVideo("https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", has_spoiler=True),
+        media=InputMediaVideo("https://te.legra.ph/file/f0e84753f400448ae541f.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
             [
                 [close_button]
