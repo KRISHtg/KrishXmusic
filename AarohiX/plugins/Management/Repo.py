@@ -31,13 +31,14 @@ async def start(_, msg):
           InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/Its_queen_tg"),
         ],
         [
-          InlineKeyboardButton("ᴠ1 ᴍᴜsɪᴄ", url=f"https://github.com/KRISHtg/queenmusicbot"),
+          InlineKeyboardButton("ᴍᴜsɪᴄ ʙᴏᴛ ʀᴇᴘᴏ", url=f"https://github.com/KRISHtg/queenmusicbot"),
         ]
+    ]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/d2081243af7c1d7578b7b.jpg",
+        photo="https://telegra.ph/file/1a3783eaa832b3d9645cc.jpg",
         caption=start_txt,
         reply_markup=reply_markup,
     )
