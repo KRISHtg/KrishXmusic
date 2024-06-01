@@ -1,15 +1,10 @@
-import asyncio
-from os import getenv
+import sys
 
-from dotenv import load_dotenv
 from pyrogram import Client
 
-load_dotenv()
-from dotenv import load_dotenv
-
 import config
-from strings.__init__ import LOGGERS
 
+from ..logging import LOGGER
 
 assistants = []
 assistantids = []
