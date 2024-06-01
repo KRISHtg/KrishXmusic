@@ -10,8 +10,6 @@ from dotenv import load_dotenv
 import config
 from strings.__init__ import LOGGERS
 
-from ..logging import LOGGER
-
 
 assistants = []
 assistantids = []
