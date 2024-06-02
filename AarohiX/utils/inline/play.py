@@ -68,7 +68,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text="ᴜᴘᴅᴀᴛᴇ",
-                url=f"https://t.me/+rCTz82Fv96NhMzc9",
+                url=f"https://t.me/queen_suportgroup",
             ),
             InlineKeyboardButton(
                 text="sᴜᴘᴘᴏʀᴛ",
@@ -91,7 +91,7 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text="ᴜᴘᴅᴀᴛᴇ",
-                url=f"https://t.me/+rCTz82Fv96NhMzc9",
+                url=f"https://t.me/queen_suportgroup",
             ),
             InlineKeyboardButton(
                 text="sᴜᴘᴘᴏʀᴛ",
