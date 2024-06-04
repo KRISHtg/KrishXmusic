@@ -550,7 +550,7 @@ class Call(PyTgCalls):
         if config.STRING3:
             pings.append(await self.three.ping)
         if config.STRING4:
-             pings.append(await self.four.ping)
+            pings.append(await self.four.ping)
         if config.STRING5:
             pings.append(await self.five.ping)
         return str(round(sum(pings) / len(pings), 3))
