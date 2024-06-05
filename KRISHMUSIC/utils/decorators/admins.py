@@ -1,9 +1,9 @@
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ANNIEMUSIC import app
-from ANNIEMUSIC.misc import SUDOERS, db
-from ANNIEMUSIC.utils.database import (
+from KRISHMUSIC import app
+from KRISHMUSIC.misc import SUDOERS, db
+from KRISHMUSIC.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
