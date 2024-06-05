@@ -1,10 +1,10 @@
 import re
 from ANNIEMUSIC import app
 from config import BOT_USERNAME
-from ANNIEMUSIC.utils.jarvis_ban import admin_filter
-from ANNIEMUSIC.mongo.filtersdb import *
-from ANNIEMUSIC.utils.filters_func import GetFIlterMessage, get_text_reason, SendFilterMessage
-from ANNIEMUSIC.utils.yumidb import user_admin
+from KRISHMUSIC.utils.jarvis_ban import admin_filter
+from KRISHMUSIC.mongo.filtersdb import *
+from KRISHMUSIC.utils.filters_func import GetFIlterMessage, get_text_reason, SendFilterMessage
+from KRISHMUSIC.utils.yumidb import user_admin
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
