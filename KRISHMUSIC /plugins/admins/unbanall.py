@@ -1,8 +1,8 @@
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from config import OWNER_ID
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from ANNIEMUSIC.utils.jarvis_ban import admin_filter
+from KRISHMUSIC.utils.jarvis_ban import admin_filter
 
 BOT_ID = "7137840518"
 
