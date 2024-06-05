@@ -5,7 +5,7 @@ import aiohttp
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from config import YOUTUBE_IMG_URL
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -107,9 +107,9 @@ async def get_thumb(videoid):
     enhancer = ImageEnhance.Brightness(background)
     background = enhancer.enhance(0.6)
     draw = ImageDraw.Draw(background)
-    arial = ImageFont.truetype("ANNIEMUSIC/assets/thumb/font2.ttf", 30)
-    font = ImageFont.truetype("ANNIEMUSIC/assets/thumb/font.ttf", 30)
-    title_font = ImageFont.truetype("ANNIEMUSIC/assets/thumb/font3.ttf", 45)
+    arial = ImageFont.truetype("KRISHMUSIC/assets/thumb/font2.ttf", 30)
+    font = ImageFont.truetype("KRISHMUSIC/assets/thumb/font.ttf", 30)
+    title_font = ImageFont.truetype("KRISHMUSIC/assets/thumb/font3.ttf", 45)
 
 
     circle_thumbnail = crop_center_circle(youtube, 400, 20)
@@ -149,7 +149,7 @@ async def get_thumb(videoid):
     draw.text((text_x_position, 400), "00:00", (255, 255, 255), font=arial)
     draw.text((1080, 400), duration, (255, 255, 255), font=arial)
 
-    play_icons = Image.open("ANNIEMUSIC/assets/thumb/play_icons.png")
+    play_icons = Image.open("KRISHMUSIC/assets/thumb/play_icons.png")
     play_icons = play_icons.resize((580, 62))
     background.paste(play_icons, (text_x_position, 450), play_icons)
 
