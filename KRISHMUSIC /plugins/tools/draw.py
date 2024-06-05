@@ -3,7 +3,7 @@ from lexica import Client as ApiClient, AsyncClient
 from pyrogram.types import InlineKeyboardButton
 from math import ceil
 import asyncio
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 
 
