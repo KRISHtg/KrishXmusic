@@ -1,13 +1,13 @@
 from pyrogram import filters
 import requests, random
 from bs4 import BeautifulSoup
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 import pytgcalls
 import os, yt_dlp 
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pytgcalls.types import AudioVideoPiped
-from ANNIEMUSIC.plugins.play import play
-from ANNIEMUSIC.plugins.play.pornplay import play
+from KRISHMUSIC.plugins.play import play
+from KRISHMUSIC.plugins.play.pornplay import play
 
 #
 #####
@@ -29,7 +29,7 @@ async def play_callback(_, query):
     await play(query.from_user.id)  # Assuming play function accepts user ID
     await query.answer("Playback started!")
         
-##########🖕
+##########
 
 @app.on_callback_query(filters.regex("^close_data"))
 async def close_callback(_, query):
