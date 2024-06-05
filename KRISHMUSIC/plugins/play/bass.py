@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from pydub import AudioSegment
 import tempfile
 import yt_dlp
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 yt_dl = yt_dlp.YoutubeDL()
 
