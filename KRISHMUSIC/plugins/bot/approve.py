@@ -1,4 +1,4 @@
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from os import environ
 from config import BOT_USERNAME
 import config
@@ -52,8 +52,8 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "ANNIEMUSIC/assets/userinfo.png"
-font_path = "ANNIEMUSIC/assets/hiroko.ttf"
+bg_path = "KRISHMUSIC/assets/userinfo.png"
+font_path = "KRISHMUSIC/assets/hiroko.ttf"
 
 # --------------------------------------------------------------------------------- #
 
