@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 import requests
 import random
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 # Truth or Dare API URLs
 truth_api_url = "https://api.truthordarebot.xyz/v1/truth"
