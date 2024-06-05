@@ -1,10 +1,10 @@
 from pyrogram import enums
 from pyrogram.enums import ChatType
 from pyrogram import filters, Client
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from config import OWNER_ID
 from pyrogram.types import Message
-from ANNIEMUSIC.utils.jarvis_ban import admin_filter
+from KRISHMUSIC.utils.jarvis_ban import admin_filter
 from pyrogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
 
