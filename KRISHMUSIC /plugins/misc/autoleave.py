@@ -4,9 +4,9 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from ANNIEMUSIC import app
-from ANNIEMUSIC.core.call import JARVIS, autoend
-from ANNIEMUSIC.utils.database import get_client, is_active_chat, is_autoend
+from KRISHMUSIC import app
+from KRISHMUSIC.core.call import JARVIS, autoend
+from KRISHMUSIC.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
