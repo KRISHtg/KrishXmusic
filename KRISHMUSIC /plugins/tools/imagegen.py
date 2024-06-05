@@ -3,7 +3,7 @@ from pyrogram.types import  Message
 from pyrogram.types import InputMediaPhoto
 from MukeshAPI import api
 from pyrogram.enums import ChatAction,ParseMode
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 @app.on_message(filters.command("imagine"))
 async def imagine_(b, message: Message):
