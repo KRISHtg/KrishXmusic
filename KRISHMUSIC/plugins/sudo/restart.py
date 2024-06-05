@@ -10,15 +10,15 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from ANNIEMUSIC import app
-from ANNIEMUSIC.misc import HAPP, SUDOERS, XCB
-from ANNIEMUSIC.utils.database import (
+from KRISHMUSIC import app
+from KRISHMUSIC.misc import HAPP, SUDOERS, XCB
+from KRISHMUSIC.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from ANNIEMUSIC.utils.decorators.language import language
-from ANNIEMUSIC.utils.pastebin import ANNIEBIN
+from KRISHMUSIC.utils.decorators.language import language
+from KRISHMUSIC.utils.pastebin import ANNIEBIN
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
