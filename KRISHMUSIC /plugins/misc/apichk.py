@@ -2,7 +2,7 @@ import requests
 import random
 import string
 from pyrogram import filters
-from ANNIEMUSIC import app as Checker
+from KRISHMUSIC import app as Checker
 
 def check_sk(key):
     data = 'card[number]=4512238502012742&card[exp_month]=12&card[exp_year]=2022&card[cvc]=354'
