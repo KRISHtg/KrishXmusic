@@ -1,7 +1,7 @@
 import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from config import SUPPORT_CHAT
 
 BUTTON = [[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/JARVIS_V_SUPPORT")]]
