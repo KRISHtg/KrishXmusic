@@ -7,11 +7,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedi
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from ANNIEMUSIC import app
-from ANNIEMUSIC.misc import _boot_
-from ANNIEMUSIC.plugins.sudo.sudoers import sudoers_list
-from ANNIEMUSIC.utils import bot_sys_stats
-from ANNIEMUSIC.utils.database import (
+from KRISHMUSIC import app
+from KRISHMUSIC.misc import _boot_
+from KRISHMUSIC.plugins.sudo.sudoers import sudoers_list
+from KRISHMUSIC.utils import bot_sys_stats
+from KRISHMUSIC.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -21,9 +21,9 @@ from ANNIEMUSIC.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from ANNIEMUSIC.utils.decorators.language import LanguageStart
-from ANNIEMUSIC.utils.formatters import get_readable_time
-from ANNIEMUSIC.utils.inline import help_pannel, private_panel, start_panel
+from KRISHMUSIC.utils.decorators.language import LanguageStart
+from KRISHMUSIC.utils.formatters import get_readable_time
+from KRISHMUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS, AYUV
 from strings import get_string
 
