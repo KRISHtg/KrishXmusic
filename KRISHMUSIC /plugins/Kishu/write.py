@@ -3,7 +3,7 @@ from pyrogram import *
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from config import  BOT_USERNAME
 from datetime import datetime
-from ANNIEMUSIC import app as app
+from KRISHMUSIC import app as app
 import requests
 
 
@@ -18,7 +18,7 @@ async def handwrite(_, message: Message):
 
     caption = f"""
 sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
-✨ ᴡʀɪᴛᴛᴇɴ ʙʏ : [𝐀𝐍𝐍𝐈𝐄](https://t.me/{BOT_USERNAME})
+✨ ᴡʀɪᴛᴛᴇɴ ʙʏ : [QUEEN](https://t.me/{BOT_USERNAME})
 🥀 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}
 """
     await m.delete()
