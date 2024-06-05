@@ -1,4 +1,4 @@
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from os import environ
 from config import BOT_USERNAME
 import config
