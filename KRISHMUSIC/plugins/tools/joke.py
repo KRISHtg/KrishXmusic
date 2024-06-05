@@ -1,5 +1,5 @@
 import requests
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram import Client, filters
 
 JOKE_API_ENDPOINT = 'https://hindi-jokes-api.onrender.com/jokes?api_key=1a6d440e3f5971eecebceee818c2'
