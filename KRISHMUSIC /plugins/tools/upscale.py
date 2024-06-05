@@ -1,7 +1,7 @@
 import os
 import config
 from config import BOT_USERNAME
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import aiofiles
