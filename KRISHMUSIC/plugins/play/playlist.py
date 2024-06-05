@@ -437,7 +437,7 @@ async def add_playlist(client, message: Message, _):
             return await message.reply_text(str(e))
             pass
     else:
-        from ANNIEMUSIC import YouTube
+        from KRISHMUSIC import YouTube
         # Add a specific song by name
         query = " ".join(message.command[1:])
         print(query)
@@ -551,7 +551,7 @@ async def del_plist(client, CallbackQuery, _):
 @app.on_callback_query(filters.regex("recover_playlist") & ~BANNED_USERS)
 @languageCB
 async def add_playlist(client, CallbackQuery, _):
-    from ANNIEMUSIC import YouTube
+    from KRISHMUSIC import YouTube
     callback_data = CallbackQuery.data.strip()
     videoid = callback_data.split(None, 1)[1]
     user_id = CallbackQuery.from_user.id
