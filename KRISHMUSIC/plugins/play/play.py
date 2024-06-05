@@ -4,7 +4,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
-from ANNIEMUSIC.utils.database import get_assistant
+from KRISHMUSIC.utils.database import get_assistant
 import config
 from KRISHMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
 from KRISHMUSIC.core.call import JARVIS
@@ -13,14 +13,14 @@ from KRISHMUSIC.utils.channelplay import get_channeplayCB
 from KRISHMUSIC.utils.decorators.language import languageCB
 from KRISHMUSIC.utils.decorators.play import PlayWrapper
 from KRISHMUSIC.utils.formatters import formats
-from ANNIEMUSIC.utils.inline import (
+from KRISHMUSIC.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from ANNIEMUSIC.utils.database import (
+from KRISHMUSIC.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -28,8 +28,8 @@ from ANNIEMUSIC.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from ANNIEMUSIC.utils.logger import play_logs
-from ANNIEMUSIC.utils.stream.stream import stream
+from KRISHMUSIC.utils.logger import play_logs
+from KRISHMUSIC.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical, AYU
 
 
