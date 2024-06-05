@@ -1,8 +1,8 @@
 import asyncio
 from typing import Union
 
-from ANNIEMUSIC.misc import db
-from ANNIEMUSIC.utils.formatters import check_duration, seconds_to_min
+from KRISHMUSIC.misc import db
+from KRISHMUSIC.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 
