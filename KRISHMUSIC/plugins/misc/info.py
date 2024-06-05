@@ -4,7 +4,7 @@ import time
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 from asyncio import sleep
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram import filters, Client, enums
 from pyrogram.enums import ParseMode
 from pyrogram.types import *
@@ -63,8 +63,8 @@ async def get_userinfo_img(
     return path
 
 # Path to background image and font
-bg_path = "ANNIEMUSIC/assets/annie/AnnieNinfo.png"
-font_path = "ANNIEMUSIC/assets/annie/jarvisinf.ttf"
+bg_path = "KRISHMUSIC/assets/annie/AnnieNinfo.png"
+font_path = "KRISHMUSIC/assets/annie/jarvisinf.ttf"
 
 # Text template for user info
 INFO_TEXT = """**
