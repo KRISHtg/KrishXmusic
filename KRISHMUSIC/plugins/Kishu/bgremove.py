@@ -2,7 +2,7 @@ import os
 import aiohttp
 import aiofiles
 from aiohttp import ContentTypeError
-from ANNIEMUSIC import app as app
+from KRISHMUSIC import app as app
 from pyrogram import filters
 
 API_KEY = "23nfCEipDijgVv6SH14oktJe"
