@@ -7,13 +7,13 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
     UserNotParticipant,
 )
-from ANNIEMUSIC.utils.database import get_assistant
+from KRISHMUSIC.utils.database import get_assistant
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from ANNIEMUSIC import YouTube, app
-from ANNIEMUSIC.core.call import JARVIS
-from ANNIEMUSIC.misc import SUDOERS, db
-from ANNIEMUSIC.utils.database import (
+from KRISHMUSIC import YouTube, app
+from KRISHMUSIC.core.call import JARVIS
+from KRISHMUSIC.misc import SUDOERS, db
+from KRISHMUSIC.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -27,12 +27,12 @@ from ANNIEMUSIC.utils.database import (
     is_muted,
     set_loop,
 )
-from ANNIEMUSIC.utils.decorators.language import languageCB
-from ANNIEMUSIC.utils.formatters import seconds_to_min
-from ANNIEMUSIC.utils.inline import close_markup, stream_markup, stream_markup_timer
-from ANNIEMUSIC.utils.inline.play import panel_markup_1, panel_markup_2, panel_markup_3
-from ANNIEMUSIC.utils.stream.autoclear import auto_clean
-from ANNIEMUSIC.utils.thumbnails import get_thumb
+from KRISHMUSIC.utils.decorators.language import languageCB
+from KRISHMUSIC.utils.formatters import seconds_to_min
+from KRISHMUSIC.utils.inline import close_markup, stream_markup, stream_markup_timer
+from KRISHMUSIC.utils.inline.play import panel_markup_1, panel_markup_2, panel_markup_3
+from KRISHMUSIC.utils.stream.autoclear import auto_clean
+from KRISHMUSIC.utils.thumbnails import get_thumb
 from config import BANNED_USERS, SOUNCLOUD_IMG_URL, STREAM_IMG_URL, TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist, confirmer, votemode
 from strings import get_string
 from config import lyrical
