@@ -1,6 +1,6 @@
 import random, os
 from pyrogram import Client, filters, enums 
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import BOT_USERNAME
 
