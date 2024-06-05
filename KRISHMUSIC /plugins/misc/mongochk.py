@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pymongo import MongoClient
 import re
-from ANNIEMUSIC import app as JARVIS
+from KRISHMUSIC import app as JARVIS
 
 
 mongo_url_pattern = re.compile(r'mongodb(?:\+srv)?:\/\/[^\s]+')
