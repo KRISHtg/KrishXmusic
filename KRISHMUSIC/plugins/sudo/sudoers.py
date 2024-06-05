@@ -2,13 +2,13 @@ from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.types import Message
 from strings import get_string, helpers
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram.types import InputMediaVideo
-from ANNIEMUSIC.misc import SUDOERS
-from ANNIEMUSIC.utils.database import add_sudo, remove_sudo
-from ANNIEMUSIC.utils.decorators.language import language
-from ANNIEMUSIC.utils.extraction import extract_user
-from ANNIEMUSIC.utils.inline import close_markup
+from KRISHMUSIC.misc import SUDOERS
+from KRISHMUSIC.utils.database import add_sudo, remove_sudo
+from KRISHMUSIC.utils.decorators.language import language
+from KRISHMUSIC.utils.extraction import extract_user
+from KRISHMUSIC.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
