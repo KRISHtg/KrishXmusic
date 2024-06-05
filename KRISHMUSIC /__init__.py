@@ -1,8 +1,8 @@
-from ANNIEMUSIC.core.bot import JARVIS
-from ANNIEMUSIC.core.dir import dirr
-from ANNIEMUSIC.core.git import git
-from ANNIEMUSIC.core.userbot import Userbot
-from ANNIEMUSIC.misc import dbb, heroku
+from KRISHMUSIC import JARVIS
+from KRISHMUSIC.core.dir import dirr
+from KRISHMUSIC.core.git import git
+from KRISHMUSIC.core.userbot import Userbot
+from KRISHMUSIC.misc import dbb, heroku
 
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
