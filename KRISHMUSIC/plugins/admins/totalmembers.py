@@ -1,8 +1,8 @@
-from ANNIEMUSIC.utils.jarvis_ban import admin_filter
+from KRISHMUSIC.utils.jarvis_ban import admin_filter
 import os
 import csv
 from pyrogram import Client, filters
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 @app.on_message(filters.command("user") & admin_filter)
 def user_command(client, message):
