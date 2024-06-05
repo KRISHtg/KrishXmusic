@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 def get_anime_info(anime_name):
     url = 'https://graphql.anilist.co'
