@@ -1,4 +1,4 @@
-from ANNIEMUSIC import app 
+from KRISHMUSIC import app 
 import asyncio
 import random
 from pyrogram import Client, filters
