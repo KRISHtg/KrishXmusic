@@ -3,7 +3,7 @@ from pyrogram import *
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from config import  BOT_USERNAME
 from datetime import datetime
-from ANNIEMUSIC import app as app
+from KRISHMUSIC import app as app
 import requests
 
 
