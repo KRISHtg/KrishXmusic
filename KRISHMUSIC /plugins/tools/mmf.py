@@ -3,7 +3,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import filters
 from pyrogram.types import Message
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 @app.on_message(filters.command("mmf"))
 async def mmf(_, message: Message):
