@@ -8,8 +8,8 @@ from pyrogram.types import *
 from pyrogram.enums import *
 
 #BOT FILE NAME
-from ANNIEMUSIC import app as app
-from ANNIEMUSIC.mongo.couples_db import _get_image, get_couple
+from KRISHMUSIC import app as app
+from KRISHMUSIC.mongo.couples_db import _get_image, get_couple
 
 def dt():
     now = datetime.now()
@@ -62,7 +62,7 @@ async def ctest(_, message):
          try:
             p1 = await app.download_media(photo1.big_file_id, file_name="pfp.png")
          except Exception:
-            p1 = "ANNIEMUSIC/assets/upic.png"
+            p1 = "KRISHMUSIC/assets/upic.png"
          try:
             p2 = await app.download_media(photo2.big_file_id, file_name="pfp1.png")
          except Exception:
