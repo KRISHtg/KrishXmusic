@@ -1,7 +1,7 @@
 import asyncio, os, time, aiohttp
 import aiohttp
 from pyrogram import filters
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
