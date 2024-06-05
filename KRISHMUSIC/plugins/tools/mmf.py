@@ -3,7 +3,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import filters
 from pyrogram.types import Message
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 @app.on_message(filters.command("mmf"))
 async def mmf(_, message: Message):
@@ -36,7 +36,7 @@ async def drawText(image_path, text):
     if os.name == "nt":
         fnt = "arial.ttf"
     else:
-        fnt = "./ANNIEMUSIC/assets/default.ttf"
+        fnt = "./KRISHMUSIC/assets/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 
