@@ -3,14 +3,14 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from ANNIEMUSIC import app
-from ANNIEMUSIC.utils import first_page, second_page
-from ANNIEMUSIC.utils.database import get_lang
-from ANNIEMUSIC.utils.decorators.language import LanguageStart, languageCB
-from ANNIEMUSIC.utils.inline.help import help_back_markup, private_help_panel
+from KRISHMUSIC import app
+from KRISHMUSIC.utils import first_page, second_page
+from KRISHMUSIC.utils.database import get_lang
+from KRISHMUSIC.utils.decorators.language import LanguageStart, languageCB
+from KRISHMUSIC.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
-from ANNIEMUSIC.misc import SUDOERS
+from KRISHMUSIC.misc import SUDOERS
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
