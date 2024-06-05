@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANNIEMUSIC import app
-from ANNIEMUSIC.misc import SUDOERS
-from ANNIEMUSIC.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from ANNIEMUSIC.utils.decorators.language import language
+from KRISHMUSIC import app
+from KRISHMUSIC.misc import SUDOERS
+from KRISHMUSIC.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from KRISHMUSIC.utils.decorators.language import language
 from config import BANNED_USERS
 
 
