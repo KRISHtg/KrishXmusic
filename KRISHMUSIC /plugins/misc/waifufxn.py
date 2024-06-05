@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 # Function to retrieve animation URL from the API
 def get_animation(api_token, animation_type):
