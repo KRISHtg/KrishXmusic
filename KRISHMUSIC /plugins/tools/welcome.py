@@ -1,4 +1,4 @@
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram import filters
 from pyrogram.errors import RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
@@ -19,7 +19,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from ANNIEMUSIC.utils.jarvis_ban import admin_filter
+from KRISHMUSIC.utils.jarvis_ban import admin_filter
 import os
 from PIL import ImageDraw, Image, ImageFont, ImageChops
 from pyrogram import *
@@ -66,13 +66,13 @@ def circle(pfp, size=(500, 500)):
     return pfp
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("ANNIEMUSIC/assets/annie/AnnieNwel.png")
+    background = Image.open("KRISHMUSIC/assets/annie/AnnieNwel.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((835, 839))
     draw = ImageDraw.Draw(background)
-    font_large = ImageFont.truetype('ANNIEMUSIC/assets/annie/ArialReg.ttf', size=65)
-    font_small = ImageFont.truetype('ANNIEMUSIC/assets/annie/ArialReg.ttf', size=60)
+    font_large = ImageFont.truetype('KRISHMUSIC/assets/annie/ArialReg.ttf', size=65)
+    font_small = ImageFont.truetype('KRISHMUSIC/assets/annie/ArialReg.ttf', size=60)
     draw.text((421, 715), f'{user}', fill=(242, 242, 242), font=font_large)
     draw.text((270, 1005), f'{id}', fill=(242, 242, 242), font=font_large)
     draw.text((570, 1308), f"{uname}", fill=(242, 242, 242), font=font_large)
