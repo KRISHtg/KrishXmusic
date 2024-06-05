@@ -1,6 +1,6 @@
 import requests
 from pyrogram import filters
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 # Waifu image functionality
 @app.on_message(filters.command("waifu"))
