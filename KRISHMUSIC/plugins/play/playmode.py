@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from ANNIEMUSIC import app
-from ANNIEMUSIC.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from ANNIEMUSIC.utils.decorators import language
-from ANNIEMUSIC.utils.inline.settings import playmode_users_markup
+from KRISHMUSIC import app
+from KRISHMUSIC.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from KRISHMUSIC.utils.decorators import language
+from KRISHMUSIC.utils.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 
