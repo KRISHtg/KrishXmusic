@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 # URL for the Bored API
 bored_api_url = "https://apis.scrimba.com/bored/api/activity"
