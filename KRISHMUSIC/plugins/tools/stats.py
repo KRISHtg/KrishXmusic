@@ -9,13 +9,13 @@ from pyrogram.types import InputMediaVideo, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from ANNIEMUSIC import app
-from ANNIEMUSIC.core.userbot import assistants
-from ANNIEMUSIC.misc import SUDOERS, mongodb
-from ANNIEMUSIC.plugins import ALL_MODULES
-from ANNIEMUSIC.utils.database import get_served_chats, get_served_users, get_sudoers
-from ANNIEMUSIC.utils.decorators.language import language, languageCB
-from ANNIEMUSIC.utils.inline.stats import back_stats_buttons, stats_buttons
+from KRISHMUSIC import app
+from KRISHMUSIC.core.userbot import assistants
+from KRISHMUSIC.misc import SUDOERS, mongodb
+from KRISHMUSIC.plugins import ALL_MODULES
+from KRISHMUSIC.utils.database import get_served_chats, get_served_users, get_sudoers
+from KRISHMUSIC.utils.decorators.language import language, languageCB
+from KRISHMUSIC.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
