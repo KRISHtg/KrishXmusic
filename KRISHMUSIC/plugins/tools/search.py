@@ -4,7 +4,7 @@ from search_engine_parser.core.engines.google import Search as GoogleSearch
 from search_engine_parser.core.engines.stackoverflow import \
     Search as StackSearch
 from search_engine_parser.core.exceptions import NoResultsFound, NoResultsOrTrafficError
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram import filters
 
 
