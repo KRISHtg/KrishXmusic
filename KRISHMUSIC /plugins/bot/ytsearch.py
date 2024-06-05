@@ -1,7 +1,7 @@
 import logging
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram import filters
 from config import BOT_USERNAME
 
