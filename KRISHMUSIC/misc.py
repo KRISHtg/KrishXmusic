@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from ANNIEMUSIC.core.mongo import mongodb
+from KRISHMUSIC.core.mongo import mongodb
 
 from .logging import LOGGER
 
