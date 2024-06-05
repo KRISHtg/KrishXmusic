@@ -2,8 +2,8 @@ import time
 
 import psutil
 
-from ANNIEMUSIC.misc import _boot_
-from ANNIEMUSIC.utils.formatters import get_readable_time
+from KRISHMUSIC.misc import _boot_
+from KRISHMUSIC.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():
