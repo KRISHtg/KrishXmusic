@@ -2,7 +2,7 @@ from KRISHMUSIC.core.bot import JARVIS
 from KRISHMUSIC.core.dir import dirr
 from KRISHMUSIC.core.git import git
 from KRISHMUSIC.core.userbot import Userbot
-from KRISHMUSIC.misc import dbb, heroku
+from ANNIEMUSIC.misc import dbb, heroku
 
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
