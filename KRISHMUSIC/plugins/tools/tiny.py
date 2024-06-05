@@ -2,7 +2,7 @@ import os
 import cv2
 from PIL import Image
 from pyrogram import Client, filters
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 
 @app.on_message(filters.command("tiny"))
@@ -14,7 +14,7 @@ async def tiny_sticker(client, message):
     kontol = await message.reply("Processing please wait")
     await kontol.edit_text("🐾")
     ik = await app.download_media(reply)
-    im1 = Image.open("ANNIEMUSIC/assets/rajnish.png")
+    im1 = Image.open("KRISHMUSIC/assets/rajnish.png")
     if ik.endswith(".tgs"):
         await app.download_media(reply, "wel2.tgs")
         os.system("lottie_convert.py wel2.tgs json.json")
