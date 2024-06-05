@@ -1,11 +1,6 @@
 """**                                                                      
 ────────────────────────────────────────────────────────────────────────
-     ____.  _____ ______________   ____.___  _________
-    |    | /  _  \\______   \   \ /   /|   |/   _____/
-    |    |/  /_\  \|       _/\   Y   / |   |\_____  \ 
-/\__|    /    |    \    |   \ \     /  |   |/        \
-\________\____|__  /____|_  /  \___/   |___/_______  /
-                 \/       \/                       \/ 
+  Krish #krish
 ────────────────────────────────────────────────────────────────────────**"""
 
 
@@ -21,7 +16,7 @@ from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 from config import MONGO_DB_URI
 
 mongo = MongoCli(MONGO_DB_URI)
-db = mongo.ANNIEMUSIC
+db = mongo.KRISHMUSIC
 
 coupledb = db.couple
 
