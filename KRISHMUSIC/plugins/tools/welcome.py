@@ -131,7 +131,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
                 user.photo.big_file_id, file_name=f"pp{user.id}.png"
             )
         except AttributeError:
-            pic = "ANNIEMUSIC/assets/upic.png"
+            pic = "KRISHMUSIC/assets/upic.png"
         if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
             try:
                 await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
