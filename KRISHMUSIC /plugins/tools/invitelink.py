@@ -1,11 +1,11 @@
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram import Client, filters
 from pyrogram.errors import ChatIdInvalid
 from pyrogram.errors import ChatAdminRequired, ChatNotModified, ChatIdInvalid, FloodWait, InviteHashExpired, UserNotParticipant
 import os
 import json
 from pyrogram.types import Message
-from ANNIEMUSIC.misc import SUDOERS
+from KRISHMUSIC.misc import SUDOERS
 
 
 
