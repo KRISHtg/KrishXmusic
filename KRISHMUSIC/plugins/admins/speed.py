@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANNIEMUSIC import app
-from ANNIEMUSIC.core.call import JARVIS
-from ANNIEMUSIC.misc import SUDOERS, db
-from ANNIEMUSIC.utils import AdminRightsCheck
-from ANNIEMUSIC.utils.database import is_active_chat, is_nonadmin_chat
-from ANNIEMUSIC.utils.decorators.language import languageCB
-from ANNIEMUSIC.utils.inline import close_markup, speed_markup
+from KRISHMUSIC import app
+from KRISHMUSIC.core.call import JARVIS
+from KRISHMUSIC.misc import SUDOERS, db
+from KRISHMUSIC.utils import AdminRightsCheck
+from KRISHMUSIC.utils.database import is_active_chat, is_nonadmin_chat
+from KRISHMUSIC.utils.decorators.language import languageCB
+from KRISHMUSIC.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
