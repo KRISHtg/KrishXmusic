@@ -8,8 +8,8 @@ from pyrogram.types import (
     Message,
 )
 
-from ANNIEMUSIC import app
-from ANNIEMUSIC.utils.database import (
+from KRISHMUSIC import app
+from KRISHMUSIC.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -25,15 +25,15 @@ from ANNIEMUSIC.utils.database import (
     skip_off,
     skip_on,
 )
-from ANNIEMUSIC.utils.decorators.admins import ActualAdminCB
-from ANNIEMUSIC.utils.decorators.language import language, languageCB
-from ANNIEMUSIC.utils.inline.settings import (
+from KRISHMUSIC.utils.decorators.admins import ActualAdminCB
+from KRISHMUSIC.utils.decorators.language import language, languageCB
+from KRISHMUSIC.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from ANNIEMUSIC.utils.inline.start import private_panel
+from KRISHMUSIC.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
 
