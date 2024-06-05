@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from ANNIEMUSIC import LOGGER, app, userbot
-from ANNIEMUSIC.core.call import JARVIS
-from ANNIEMUSIC.misc import sudo
-from ANNIEMUSIC.plugins import ALL_MODULES
-from ANNIEMUSIC.utils.database import get_banned_users, get_gbanned
+from KRISHMUSIC import LOGGER, app, userbot
+from KRISHMUSIC.core.call import JARVIS
+from KRISHMUSIC.misc import sudo
+from KRISHMUSIC.plugins import ALL_MODULES
+from KRISHMUSIC.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -35,8 +35,8 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("ANNIEMUSIC.plugins" + all_module)
-    LOGGER("ANNIEMUSIC.plugins").info("ᴀɴɴɪᴇ's ᴍᴏᴅᴜʟᴇs ʟᴏᴀᴅᴇᴅ...")
+        importlib.import_module("KRISHMUSIC.plugins" + all_module)
+    LOGGER("KRISHMUSIC.plugins").info("ᴀɴɴɪᴇ's ᴍᴏᴅᴜʟᴇs ʟᴏᴀᴅᴇᴅ...")
     await userbot.start()
     await JARVIS.start()
     try:
@@ -49,13 +49,13 @@ async def init():
     except:
         pass
     await JARVIS.decorators()
-    LOGGER("ANNIEMUSIC").info(
+    LOGGER("KRISHMUSIC").info(
         "\x41\x6e\x6e\x69\x65\x20\x4d\x75\x73\x69\x63\x20\x52\x6f\x62\x6f\x74\x20\x53\x74\x61\x72\x74\x65\x64\x20\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6c\x6c\x79\x2e\x2e\x2e"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("ANNIEMUSIC").info("sᴛᴏᴘɪɴɢ ᴀɴɴɪᴇ ᴍᴜsɪᴄ ʙᴏᴛ ...")
+    LOGGER("KRISHMUSIC").info("sᴛᴏᴘɪɴɢ ᴀɴɴɪᴇ ᴍᴜsɪᴄ ʙᴏᴛ ...")
 
 
 if __name__ == "__main__":
