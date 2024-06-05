@@ -4,7 +4,7 @@ import mimetypes
 import os
 from pyrogram import filters, types as t
 from lexica import AsyncClient
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from lexica.constants import languageModels
 
 
