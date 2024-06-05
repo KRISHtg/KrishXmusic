@@ -5,7 +5,7 @@ import openai
 import requests
 from pyrogram import filters
 from pyrogram.enums import ChatAction, ParseMode
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 import config
 from config import GPT_API
 
