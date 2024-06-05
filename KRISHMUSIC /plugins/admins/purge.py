@@ -3,8 +3,8 @@ from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.errors import MessageDeleteForbidden, RPCError
 from pyrogram.types import Message
-from ANNIEMUSIC.utils.jarvis_ban import admin_filter
-from ANNIEMUSIC import app
+from KRISHMUSIC.utils.jarvis_ban import admin_filter
+from KRISHMUSIC import app
 
 
 @app.on_message(filters.command("purge") & admin_filter)
