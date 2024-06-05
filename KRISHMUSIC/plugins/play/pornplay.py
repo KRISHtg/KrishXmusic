@@ -7,7 +7,7 @@ import os, yt_dlp
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pytgcalls.types import AudioVideoPiped
 from KRISHMUSIC.plugins.play import play
-from KRISHMUSIC.plugins.play.pornplay import play
+from ANNIEMUSIC.plugins.play.pornplay import play
 
 #
 #####
