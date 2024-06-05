@@ -8,7 +8,7 @@ import yt_dlp
 from urllib.parse import urlparse
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
-from ANNIEMUSIC import app, YouTube
+from KRISHMUSIC import app, YouTube
 from pyrogram import filters
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -23,9 +23,9 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
-from ANNIEMUSIC.utils.decorators.language import language, languageCB
-from ANNIEMUSIC.utils.formatters import convert_bytes
-from ANNIEMUSIC.utils.inline.song import song_markup
+from KRISHMUSIC.utils.decorators.language import language, languageCB
+from KRISHMUSIC.utils.formatters import convert_bytes
+from KRISHMUSIC.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = ["song"]
