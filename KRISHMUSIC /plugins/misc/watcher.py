@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANNIEMUSIC import app
-from ANNIEMUSIC.core.call import JARVIS
+from KRISHMUSIC import app
+from KRISHMUSIC.core.call import JARVIS
 
 welcome = 20
 close = 30
