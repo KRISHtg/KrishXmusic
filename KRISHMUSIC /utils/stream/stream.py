@@ -5,15 +5,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from ANNIEMUSIC import Carbon, YouTube, app
-from ANNIEMUSIC.core.call import JARVIS
-from ANNIEMUSIC.misc import db
-from ANNIEMUSIC.utils.database import add_active_video_chat, is_active_chat
-from ANNIEMUSIC.utils.exceptions import AssistantErr
-from ANNIEMUSIC.utils.inline import aq_markup, close_markup, stream_markup
-from ANNIEMUSIC.utils.pastebin import ANNIEBIN
-from ANNIEMUSIC.utils.stream.queue import put_queue, put_queue_index
-from ANNIEMUSIC.utils.thumbnails import get_thumb
+from KRISHMUSIC import Carbon, YouTube, app
+from KRISHMUSIC.core.call import JARVIS
+from KRISHMUSIC.misc import db
+from KRISHMUSIC.utils.database import add_active_video_chat, is_active_chat
+from KRISHMUSIC.utils.exceptions import AssistantErr
+from KRISHMUSIC.utils.inline import aq_markup, close_markup, stream_markup
+from KRISHMUSIC.utils.pastebin import ANNIEBIN
+from KRISHMUSIC.utils.stream.queue import put_queue, put_queue_index
+from KRISHMUSIC.utils.thumbnails import get_thumb
 
 
 async def stream(
