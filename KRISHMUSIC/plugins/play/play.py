@@ -6,13 +6,13 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 from ANNIEMUSIC.utils.database import get_assistant
 import config
-from ANNIEMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from ANNIEMUSIC.core.call import JARVIS
-from ANNIEMUSIC.utils import seconds_to_min, time_to_seconds
-from ANNIEMUSIC.utils.channelplay import get_channeplayCB
-from ANNIEMUSIC.utils.decorators.language import languageCB
-from ANNIEMUSIC.utils.decorators.play import PlayWrapper
-from ANNIEMUSIC.utils.formatters import formats
+from KRISHMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from KRISHMUSIC.core.call import JARVIS
+from KRISHMUSIC.utils import seconds_to_min, time_to_seconds
+from KRISHMUSIC.utils.channelplay import get_channeplayCB
+from KRISHMUSIC.utils.decorators.language import languageCB
+from KRISHMUSIC.utils.decorators.play import PlayWrapper
+from KRISHMUSIC.utils.formatters import formats
 from ANNIEMUSIC.utils.inline import (
     botplaylist_markup,
     livestream_markup,
