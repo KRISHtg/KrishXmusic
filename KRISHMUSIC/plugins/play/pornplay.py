@@ -1,13 +1,13 @@
 from pyrogram import filters
 import requests, random
 from bs4 import BeautifulSoup
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 import pytgcalls
 import os, yt_dlp 
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pytgcalls.types import AudioVideoPiped
-from ANNIEMUSIC.plugins.play import play
-from ANNIEMUSIC.plugins.play.pornplay import play
+from KRISHMUSIC.plugins.play import play
+from KRISHMUSIC.plugins.play.pornplay import play
 
 #
 #####
