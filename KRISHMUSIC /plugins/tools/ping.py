@@ -4,11 +4,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 from config import *
-from ANNIEMUSIC import app
-from ANNIEMUSIC.core.call import JARVIS
-from ANNIEMUSIC.utils import bot_sys_stats
-from ANNIEMUSIC.utils.decorators.language import language
-from ANNIEMUSIC.utils.inline import supp_markup
+from KRISHMUSIC import app
+from KRISHMUSIC.core.call import JARVIS
+from KRISHMUSIC.utils import bot_sys_stats
+from KRISHMUSIC.utils.decorators.language import language
+from KRISHMUSIC.utils.inline import supp_markup
 from config import BANNED_USERS
 
 
