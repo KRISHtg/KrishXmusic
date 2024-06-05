@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from ANNIEMUSIC import app
-from ANNIEMUSIC.utils.database import is_on_off
+from KRISHMUSIC import app
+from KRISHMUSIC.utils.database import is_on_off
 from config import LOGGER_ID
 
 
