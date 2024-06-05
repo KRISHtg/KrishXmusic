@@ -18,7 +18,7 @@ from KRISHMUSIC import app
 from config import BOT_USERNAME
 from KRISHMUSIC.utils.errors import capture_err
 
-from ANNIEMUSIC.utils.files import (
+from KRISHMUSIC.utils.files import (
     get_document_from_file_id,
     resize_file_to_sticker_size,
     upload_document,
