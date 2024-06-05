@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 import git
 import shutil
 import os
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 
 
