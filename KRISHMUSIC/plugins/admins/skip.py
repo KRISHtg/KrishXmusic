@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from ANNIEMUSIC import YouTube, app
-from ANNIEMUSIC.core.call import JARVIS
-from ANNIEMUSIC.misc import db
-from ANNIEMUSIC.utils.database import get_loop
-from ANNIEMUSIC.utils.decorators import AdminRightsCheck
-from ANNIEMUSIC.utils.inline import close_markup, stream_markup
-from ANNIEMUSIC.utils.stream.autoclear import auto_clean
-from ANNIEMUSIC.utils.thumbnails import get_thumb
+from KRISHMUSIC import YouTube, app
+from KRISHMUSIC.core.call import JARVIS
+from KRISHMUSIC.misc import db
+from KRISHMUSIC.utils.database import get_loop
+from KRISHMUSIC.utils.decorators import AdminRightsCheck
+from KRISHMUSIC.utils.inline import close_markup, stream_markup
+from KRISHMUSIC.utils.stream.autoclear import auto_clean
+from KRISHMUSIC.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
