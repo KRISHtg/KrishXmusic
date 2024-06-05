@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ChatPermi
 from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired, UserAdminInvalid, BadRequest
 
 import datetime
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 def mention(user, name, mention=True):
     if mention:
