@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from config import OWNER_ID, BOT_USERNAME
 from pyrogram.types import Message
 
