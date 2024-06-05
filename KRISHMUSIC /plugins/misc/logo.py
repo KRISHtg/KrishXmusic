@@ -5,7 +5,7 @@ import pyrogram, asyncio, random, time
 from pyrogram.errors import FloodWait
 from pyrogram.types import *
 import requests
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 
 
 
