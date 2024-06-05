@@ -3,8 +3,8 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from dotenv import load_dotenv
 import config
-from ANNIEMUSIC.core.userbot import Userbot
-from ANNIEMUSIC import app
+from KRISHMUSIC.core.userbot import Userbot
+from KRISHMUSIC import app
 from datetime import datetime
 
 # Assuming Userbot is defined elsewhere
