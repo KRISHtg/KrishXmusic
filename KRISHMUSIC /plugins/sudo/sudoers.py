@@ -2,13 +2,13 @@ from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.types import Message
 from strings import get_string, helpers
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from pyrogram.types import InputMediaVideo
-from ANNIEMUSIC.misc import SUDOERS
-from ANNIEMUSIC.utils.database import add_sudo, remove_sudo
-from ANNIEMUSIC.utils.decorators.language import language
-from ANNIEMUSIC.utils.extraction import extract_user
-from ANNIEMUSIC.utils.inline import close_markup
+from KRISHMUSIC.misc import SUDOERS
+from KRISHMUSIC.utils.database import add_sudo, remove_sudo
+from KRISHMUSIC.utils.decorators.language import language
+from KRISHMUSIC.utils.extraction import extract_user
+from KRISHMUSIC.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
@@ -61,7 +61,7 @@ async def sudoers_list(client, message: Message):
 async def check_sudo_list(client, callback_query: CallbackQuery):
     keyboard = []
     if callback_query.from_user.id not in SUDOERS:
-        return await callback_query.answer("ᴘᴀʜʟᴇ ᴊᴀʀᴠɪs ᴘᴀᴘᴀ sᴇ ᴘᴇʀᴍɪssɪᴏɴ ʟᴇʟᴏ😁💀", show_alert=True)
+        return await callback_query.answer("ᴘᴀʜʟᴇ ᴘᴇʀᴍɪssɪᴏɴ ʟᴇʟᴏ😁💀", show_alert=True)
     else:
         user = await app.get_users(OWNER_ID)
 
