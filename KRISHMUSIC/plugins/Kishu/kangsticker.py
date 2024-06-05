@@ -14,9 +14,9 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from ANNIEMUSIC import app
+from KRISHMUSIC import app
 from config import BOT_USERNAME
-from ANNIEMUSIC.utils.errors import capture_err
+from KRISHMUSIC.utils.errors import capture_err
 
 from ANNIEMUSIC.utils.files import (
     get_document_from_file_id,
@@ -24,7 +24,7 @@ from ANNIEMUSIC.utils.files import (
     upload_document,
 )
 
-from ANNIEMUSIC.utils.stickerset import (
+from KRISHMUSIC.utils.stickerset import (
     add_sticker_to_set,
     create_sticker,
     create_sticker_set,
