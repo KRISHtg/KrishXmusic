@@ -1,8 +1,8 @@
 import random
 from typing import Dict, List, Union
 
-from ANNIEMUSIC import userbot
-from ANNIEMUSIC.core.mongo import mongodb
+from KRISHMUSIC import userbot
+from KRISHMUSIC.core.mongo import mongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
