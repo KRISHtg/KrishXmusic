@@ -9,8 +9,6 @@ import config
 
 from ..logging import LOGGER
 
-loop = asyncio.get_event_loop_policy().get_event_loop()
-
 
 def install_req(cmd: str) -> Tuple[str, str, int, int]:
     async def install_requirements():
@@ -28,7 +26,7 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
             process.pid,
         )
 
-    return loop.run_until_complete(install_requirements())
+    return asyncio.get_event_loop().run_until_complete(install_requirements())
 
 
 def git():
@@ -70,4 +68,4 @@ def git():
         except GitCommandError:
             repo.git.reset("--hard", "FETCH_HEAD")
         install_req("pip3 install --no-cache-dir -r requirements.txt")
-        LOGGER(__name__).info(f"Fetched Updates from: {REPO_LINK}")
+        LOGGER(__name__).info(f"Fetching updates from upstream repository...")
