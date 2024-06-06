@@ -84,7 +84,7 @@ PING_VID_URL = getenv(
     "PING_VID_URL", "https://telegra.ph/file/e4349001819073ddc1de6.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/c92f6ba5c89415a05ea52.jpg"
-STATS_VID_URL = "https://telegra.ph/file/f8c894d7b7a7324aed76d.jpg"
+STATS_VID_URL = "https://telegra.ph/file/373e5836843dcc5a64411.mp4"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/c92f6ba5c89415a05ea52.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/c92f6ba5c89415a05ea52.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/c92f6ba5c89415a05ea52.jpg"
