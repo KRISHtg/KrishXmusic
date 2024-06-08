@@ -35,5 +35,5 @@ KRISHtg/queenmusicbot is a ✨ _special_ ✨ repository because its README.md (t
     ─「ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ」─
 </h3>
 
-[![Deploy To Heroku](https://te.legra.ph/file/686ede8a76cb7a0944d5e.jpg)](https://dashboard.heroku.com/new-app?template=https://github.com/KRISHtg/queenmusicbot)
-
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/KRISHtg/queenmusicbot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-darkred?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<h3 align="center">
