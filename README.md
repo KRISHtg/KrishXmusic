@@ -8,12 +8,6 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
-<h3 align="center">
-    ─「ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ」─
-</h3>
-
-[![Deploy To Heroku](https://te.legra.ph/file/686ede8a76cb7a0944d5e.jpg)](https://dashboard.heroku.com/new-app?template=https://github.com/KRISHtg/queenmusicbot)
-
 
 ━━━━━━━━━━━━━━━━
 ### 🍁 𝗩𝗜𝗦𝗜𝗧𝗢𝗥𝗦 🍁
@@ -28,14 +22,6 @@ KRISHtg/queenmusicbot is a ✨ _special_ ✨ repository because its README.md (t
 </p>
 
 
-
-
-<h2 align="center">
-    𖢵 𝐐ᴜᴇᴇɴ ✘ 𝐌ᴜꜱɪᴄ♡ 𖢵
-
-★ 𝗛𝗘𝗥𝗢𝗞𝗨 + 𝗩𝗣𝗦 ★
-
-
 </h2>
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=♦ᴅᴇᴘʟᴏʏ+ᴏɴ+ʜᴇʀᴏᴋᴜ♦;♨️+ɴᴏ+ʜᴇʀᴏᴋᴜ+ʙᴀɴ+ɪssᴜᴇ+ᴀʟsᴏ+ᴠᴘs+ᴅᴇᴘʟᴏʏ+📍+ᴘʀᴇsᴇɴᴛ;🎭+ᴘᴏᴡᴇʀᴇᴅ+ʙʏ+KRISH+🎭">
 <p align="center">
@@ -43,3 +29,11 @@ KRISHtg/queenmusicbot is a ✨ _special_ ✨ repository because its README.md (t
 </p>
 
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=⚠️𝗙𝗢𝗥𝗞+𝗧𝗛𝗜𝗦+𝗥𝗘𝗣𝗢+𝗙𝗜𝗥𝗦𝗧𝗟𝗬⚠️">
+
+
+<h3 align="center">
+    ─「ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ」─
+</h3>
+
+[![Deploy To Heroku](https://te.legra.ph/file/686ede8a76cb7a0944d5e.jpg)](https://dashboard.heroku.com/new-app?template=https://github.com/KRISHtg/queenmusicbot)
+
