@@ -35,3 +35,12 @@ KRISHtg/queenmusicbot is a ✨ _special_ ✨ repository because its README.md (t
     𖢵 𝐐ᴜᴇᴇɴ ✘ 𝐌ᴜꜱɪᴄ♡゙ 𖢵
 
 ★ 𝗛𝗘𝗥𝗢𝗞𝗨 + 𝗩𝗣𝗦 ★
+
+
+</h2>
+<img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=♦ᴅᴇᴘʟᴏʏ+ᴏɴ+ʜᴇʀᴏᴋᴜ♦;♨️+ɴᴏ+ʜᴇʀᴏᴋᴜ+ʙᴀɴ+ɪssᴜᴇ+ᴀʟsᴏ+ᴠᴘs+ᴅᴇᴘʟᴏʏ+📍+ᴘʀᴇsᴇɴᴛ;🎭+ᴘᴏᴡᴇʀᴇᴅ+ʙʏ+KRISH+🎭">
+<p align="center">
+  <img src="https://te.legra.ph/file/0f37a7c706b597e4ce5fa.jpg">
+</p>
+
+<img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=⚠️𝗙𝗢𝗥𝗞+𝗧𝗛𝗜𝗦+𝗥𝗘𝗣𝗢+𝗙𝗜𝗥𝗦𝗧𝗟𝗬⚠️">
