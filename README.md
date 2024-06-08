@@ -12,7 +12,7 @@
     ─「ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ」─
 </h3>
 
-[![Deploy To Heroku](https://te.legra.ph/file/2cb59982108be09fa38f6.jpg)](https://dashboard.heroku.com/new-app?template=https://github.com/KRISHtg/queenmusicbot)
+[![Deploy To Heroku](https://te.legra.ph/file/dc5bd971285041390c19f.jpg)](https://dashboard.heroku.com/new-app?template=https://github.com/KRISHtg/queenmusicbot)
 
 
 ━━━━━━━━━━━━━━━━
