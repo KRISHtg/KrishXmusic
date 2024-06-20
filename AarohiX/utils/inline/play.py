@@ -60,19 +60,18 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
         ],
         [
-            InlineKeyboardButton(text="◁", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="☊", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="◯", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="ʀᴇꜱᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="ᴘᴀᴜꜱᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="ꜱᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
                 text="ᴏᴡɴᴇʀ",
-                url=f"https://t.me/ruhi_queen1",
+                url=f"https://t.me/Queen_update",
             ),
             InlineKeyboardButton(
                 text="sᴜᴘᴘᴏʀᴛ",
-                url=f"https://t.me/+JH5lJV_0oVc0NjBl",
+                url=f"https://t.me/Queen_update",
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -83,19 +82,18 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="◁", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="☊", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="◯", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="ʀᴇꜱᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="ᴘᴀᴜꜱᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="ꜱᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
                 text="ᴏᴡɴᴇʀ",
-                url=f"https://t.me/ruhi_queen1",
+                url=f"https://t.me/Queen_update",
             ),
             InlineKeyboardButton(
                 text="sᴜᴘᴘᴏʀᴛ",
-                url=f"https://t.me/+JH5lJV_0oVc0NjBl",
+                url=f"https://t.me/Queen_update",
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
