@@ -65,14 +65,8 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="▷ ꜱᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(
-                text="ᴏᴡɴᴇʀ",
-                url=f"https://t.me/Its_krish_tg",
-            ),
-            InlineKeyboardButton(
-                text="sᴜᴘᴘᴏʀᴛ",
-                url=f"https://t.me/Queen_update",
-            ),
+            InlineKeyboardButton(text="▢ ꜱᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ",url=f"https://t.me/Queen_update",),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
@@ -87,14 +81,8 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="▷ ꜱᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(
-                text="ᴏᴡɴᴇʀ",
-                url=f"https://t.me/Its_krish_tg",
-            ),
-            InlineKeyboardButton(
-                text="sᴜᴘᴘᴏʀᴛ",
-                url=f"https://t.me/Queen_update",
-            ),
+            InlineKeyboardButton(text="▢ ꜱᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ",url=f"https://t.me/Queen_update",),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
