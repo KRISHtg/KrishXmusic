@@ -137,7 +137,7 @@ async def greet_group(_, member: ChatMemberUpdated):
 ┣ 𝟓 ➥ 𝐆ɪᴠᴇ  ʀᴇsᴘᴇᴄᴛ , ᴛᴀᴋᴇ  ʀᴇsᴘᴇᴄᴛ 
 ┗━━━━━━━━━━━━━━━━━      
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [𝐐ᴜᴇᴇɴ ✘ 𝐌ᴜꜱɪᴄ](https://t.me/Queen_of_heart_music_bot)
+❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ 𝐐ᴜᴇᴇɴ ✘ 𝐌ᴜꜱɪᴄ
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/Queen_of_heart_music_bot?startgroup=true")]])
         )
