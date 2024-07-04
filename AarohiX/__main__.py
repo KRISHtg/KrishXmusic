@@ -21,7 +21,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER(__name__).error("✦ Assistant client variables not defined, exiting...")
+        LOGGER(__name__).error("Assistant client variables not defined, exiting...")
         exit()
     await sudo()
     try:
@@ -36,11 +36,11 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("AarohiX.plugins" + all_module)
-    LOGGER("AarohiX.plugins").info("✦ Successfully Imported Modules...💞")
+    LOGGER("AarohiX.plugins").info("sᴜᴄᴄᴇssғᴜʟʟʏ ɪᴍᴘᴏʀᴛᴇᴅ ᴀʟʟ ᴍᴏᴅᴜʟᴇs....💞")
     await userbot.start()
-    await Anony.start()
+    await Dil.start()
     try:
-        await Anony.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Dil.stream_call("https://te.legra.ph/file/39b302c93da5c457a87e3.mp4")
     except NoActiveGroupCall:
         LOGGER("AarohiX").error(
             "✦ Please turn on the videochat of your log group\channel.\n\n✦ Stopping Bot...💣"
@@ -48,14 +48,14 @@ async def init():
         exit()
     except:
         pass
-    await Anony.decorators()
+    await Dil.decorators()
     LOGGER("AarohiX").info(
-        "✦ EDIT BY ➥ KRISH...🐝"
+        "✦ EDIT BY ➥ KRISH"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("AarohiX").info("❖ Stopping Queen Music Bot...💌")
+    LOGGER("AarohiX").info("ᴍᴀᴀ ᴄʜᴜᴅᴀ ᴍᴀɪɴ ʙᴏᴛ ʙᴀɴᴅ ᴋᴀʀ ʀʜᴀ AᴀʀᴏʜɪX Mᴜsɪᴄ Bᴏᴛ...")
 
 
 if __name__ == "__main__":
