@@ -4,7 +4,7 @@ from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from AarohiX import app
-from AarohiX.utils import first_page, second_page
+from AarohiX.utils import help_pannel
 from AarohiX.utils.database import get_lang
 from AarohiX.utils.decorators.language import LanguageStart, languageCB
 from AarohiX.utils.inline.help import help_back_markup, private_help_panel
