@@ -27,7 +27,7 @@ async def start(_, msg):
           InlineKeyboardButton("⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/queen_suportgroup"),
+          InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/its_me_krish_tg"),
           InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/Its_queen_tg"),
         ],
         [
@@ -38,7 +38,7 @@ async def start(_, msg):
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/1a3783eaa832b3d9645cc.jpg",
+        photo="https://telegra.ph/file/db15d3adf48fafbef23f7.jpg",
         caption=start_txt,
         reply_markup=reply_markup,
     )
