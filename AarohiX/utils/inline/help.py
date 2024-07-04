@@ -37,8 +37,7 @@ def second_page(_):
                         [InlineKeyboardButton(text=_["H_B_22"], callback_data="help_callback hb22"), InlineKeyboardButton(text=_["H_B_23"], callback_data="help_callback hb23"),InlineKeyboardButton(text=_["H_B_24"], callback_data="help_callback hb24")],
 			[InlineKeyboardButton(text=_["H_B_25"], callback_data="help_callback hb25"), InlineKeyboardButton(text=_["H_B_26"], callback_data="help_callback hb26"),InlineKeyboardButton(text=_["H_B_27"], callback_data="help_callback hb27")],
                         [InlineKeyboardButton(text=_["H_B_28"], callback_data="help_callback hb28"), InlineKeyboardButton(text=_["H_B_29"], callback_data="help_callback hb29"),InlineKeyboardButton(text=_["H_B_30"], callback_data="help_callback hb30")],
-                        [InlineKeyboardButton(text=_["H_B_31"], callback_data="help_callback hb31")],
-			controll_button,
+                        controll_button,
 		]
 	)
 	return second_page_menu
