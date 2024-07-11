@@ -11,7 +11,7 @@ from AarohiX import (
     app,
     userbot,
 )
-from AarohiX.core.call import VIP
+from AarohiX.core.call import Dil
 from AarohiX.misc import sudo
 from AarohiX.plugins import ALL_MODULES
 from AarohiX.plugins.tools.clone import restart_bots
