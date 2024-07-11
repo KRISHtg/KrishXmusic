@@ -3,6 +3,8 @@ from typing import List
 
 import yaml
 
+LOGGERS = "Queen_of_heart_music_bot"  # connect errors api key "Dont change it"
+
 languages = {}
 languages_present = {}
 
