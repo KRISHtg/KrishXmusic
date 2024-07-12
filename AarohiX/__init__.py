@@ -1,11 +1,10 @@
-from SafoneAPI import SafoneAPI
-
 from AarohiX.core.bot import Dil
 from AarohiX.core.dir import dirr
 from AarohiX.core.git import git
 from AarohiX.core.userbot import Userbot
 from AarohiX.misc import dbb, heroku
 
+from SafoneAPI import SafoneAPI
 from .logging import LOGGER
 
 dirr()
@@ -16,7 +15,7 @@ heroku()
 app = Dil()
 api = SafoneAPI()
 userbot = Userbot()
-HELPABLE = {}
+
 
 from .platforms import *
 
@@ -27,4 +26,3 @@ Spotify = SpotifyAPI()
 Resso = RessoAPI()
 Telegram = TeleAPI()
 YouTube = YouTubeAPI()
-APP = "tg_vc_bot"  # connect music api key "Dont change it"
