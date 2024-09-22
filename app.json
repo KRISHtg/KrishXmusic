@@ -1,12 +1,12 @@
 {
-    "name": "KRISH MUSIC",
+    "name": "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/50365e81032599cf153d7.jpg",
+    "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "VenomX",
+    "AnonX",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -34,11 +34,11 @@
       },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "6987821999",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session from @Shsusu_bot on Telegram.",
+        "description": "A Pyrogram v2 String Session from @StringFatherBot on Telegram.",
         "value": "",
         "required": true
       },
@@ -51,11 +51,6 @@
         "description": "Your heroku app name",
         "value": "",
         "required": false
-      },
-        "DEEP_API": {
-            "description": "Your DEEP API key from https://deepai.org/",
-            "value": "",
-            "required": false
       },
       "LOGGER_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
