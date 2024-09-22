@@ -1,10 +1,9 @@
-from AarohiX.core.bot import Dil
-from AarohiX.core.dir import dirr
-from AarohiX.core.git import git
-from AarohiX.core.userbot import Userbot
-from AarohiX.misc import dbb, heroku
+from AnonXMusic.core.bot import Anony
+from AnonXMusic.core.dir import dirr
+from AnonXMusic.core.git import git
+from AnonXMusic.core.userbot import Userbot
+from AnonXMusic.misc import dbb, heroku
 
-from SafoneAPI import SafoneAPI
 from .logging import LOGGER
 
 dirr()
@@ -12,8 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Dil()
-api = SafoneAPI()
+app = Anony()
 userbot = Userbot()
 
 

@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from AarohiX.core.mongo import mongodb
+from AnonXMusic.core.mongo import mongodb
 
 from .logging import LOGGER
 
@@ -39,7 +39,7 @@ XCB = [
 def dbb():
     global db
     db = {}
-    LOGGER(__name__).info(f"✦ Local Database Initialized...💛")
+    LOGGER(__name__).info(f"Local Database Initialized.")
 
 
 async def sudo():
@@ -58,7 +58,7 @@ async def sudo():
     if sudoers:
         for user_id in sudoers:
             SUDOERS.add(user_id)
-    LOGGER(__name__).info(f"✦ Sudoers Loaded...❤️")
+    LOGGER(__name__).info(f"Sudoers Loaded.")
 
 
 def heroku():
@@ -68,8 +68,8 @@ def heroku():
             try:
                 Heroku = heroku3.from_key(config.HEROKU_API_KEY)
                 HAPP = Heroku.app(config.HEROKU_APP_NAME)
-                LOGGER(__name__).info(f"✦ Heroku App Configured...💙")
+                LOGGER(__name__).info(f"Heroku App Configured")
             except BaseException:
                 LOGGER(__name__).warning(
-                    f"✦ Please make sure your Heroku API Key and Your App name are configured correctly in the heroku...💚"
+                    f"Please make sure your Heroku API Key and Your App name are configured correctly in the heroku."
                 )
