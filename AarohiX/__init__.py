@@ -1,4 +1,4 @@
-from AarohiX.core.bot import Anony
+from AarohiX.core.bot import Dil
 from AarohiX.core.dir import dirr
 from AarohiX.core.git import git
 from AarohiX.core.userbot import Userbot
@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Anony()
+app = Dil()
 userbot = Userbot()
 
 
