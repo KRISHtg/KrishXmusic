@@ -1,5 +1,4 @@
 from typing import Union
-from config import OWNER_ID, SUPPORT_CHAT
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -67,9 +66,7 @@ def queue_back_markup(_, CPLAY):
 def aq_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/Queen_of_heart_music_bot?startgroup=true"),
-        ],
-        [   InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")
-        ],
+            
+        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
