@@ -60,7 +60,37 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
-
+KRISH = [ 
+    "💞",
+    "🔎",
+    "🔍",
+    "🧪",
+    "💣",
+     "⚡️",
+     "🔥",
+     "🕺",
+     "🎩",
+     "🌈",
+     "🍷",
+     "🥂",
+     "🍾",
+    "🥃",
+    "🥤",
+    "🍽",
+    "🍭",
+    "🚗",
+    "🚕",
+    "🚓",
+    "🚑",
+    "🚀",
+    "💎",
+    "🔮",
+    "🪄",
+    "💌",
+    "⁉️",
+    "💤",
+    "🧨"
+]
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", "")
