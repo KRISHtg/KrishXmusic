@@ -23,9 +23,9 @@ SONG_DOWNLOAD_DURATION = int(
 
 LOGGER_ID = int(getenv("LOGGER_ID", -1001864483206))
 
-OWNER_ID = int(getenv("OWNER_ID", "6987821999"))
+OWNER_ID = int(getenv("OWNER_ID", "6745609407"))
 
-BOT_USERNAME = getenv("BOT_USERNAME" , "Queen_of_heart_music_bot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "anonXmusicbot")
 
 COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
 
@@ -37,7 +37,6 @@ UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/KRISHtg/AarohiX",
 )
-REPO = getenv("REPO", "https://github.com/KRISHtg/AarohiX")
 
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
