@@ -51,7 +51,7 @@ KRISHtg/queenmusicbot is a ✨ _special_ ✨ repository because its README.md (t
    ```
 5. **Clone the Repository**
    ```bash
-   git clone https://github.com/CyberPixelPro/AviaxMusic && cd AviaxMusic
+   git clone https://github.com/KRISHtg/AnonXMusic && cd AnonXMusic
    ```
 6. **Install Requirements**
    ```bash
