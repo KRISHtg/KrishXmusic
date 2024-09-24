@@ -22,7 +22,7 @@ from AnonXMusic.utils.inline import (
 )
 from AnonXMusic.utils.logger import play_logs
 from AnonXMusic.utils.stream.stream import stream
-from config import BANNED_USERS, lyrical
+from config import BANNED_USERS, lyrical, KRISH 
 
 
 @app.on_message(
@@ -54,7 +54,7 @@ async def play_commnd(
     fplay,
 ):
     mystic = await message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
+        _["play_2"].format(channel) if channel else random.choice(KRISH)
     )
     plist_id = None
     slider = None
