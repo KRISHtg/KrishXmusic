@@ -7,22 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", 18349663))
+API_HASH = getenv("API_HASH", "1227a714a157e2056cc81fa81a7859c3")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6574241781:AAEIQl0ORa86X5kQrqo4lpcn4IouFhf0Y_o")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://debojitbbb0:NgiJdMgZ1VilczTq@cluster0.xpvhh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 
 # Chat id of a group for logging bot's activities
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
+LOGGER_ID = int(getenv("LOGGER_ID", -1001921995918))
 
-# Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", None))
+# Get this value from @FallenxBot on Telegram by /id
+OWNER_ID = int(getenv("OWNER_ID", 7332532623))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -32,21 +32,17 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/KRISHtg/AnonXMusic",
+    "https://github.com/Krishopmp/AnonXMusickrishbot",
 )
+REPO = getenv("REPO", "https://github.com/KRISHtg/AarohiX")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GIT_TOKEN = getenv(
-    "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+9U8Td9WZ2dk1ZGU1")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/+Kus9t8btLPRhYzll")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Krrishofficial122")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+16FWxG30PUxhNzQ1")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
-
-# make your bots privacy from telegra.ph and put your url here 
-PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-AviaxMusic-08-14")
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
@@ -60,45 +56,42 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 
 # Telegram audio and video file size limit (in bytes)
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 
-# Get your pyrogram v2 session from @Shsusu_bot on Telegram
-STRING1 = getenv("STRING_SESSION", "")
+
+# Get your pyrogram v2 session from @StringFatherBot on Telegram
+STRING1 = getenv("STRING_SESSION", "BQGHuooAI_yfc1WuYt0FXpZE5KIto2NXBPL1yRPGzo7AA7wkVUesU8DW084YblkpVMPFgnRE7biXCd3TKl0dE5mjY4yqGdqxnkTMwBa7oehoLgguecnYUdVe5nt4W8ju4EBQYHZ4OXvcv8w5pCsI8w7ldwWsDvKFBDo3E--gqAVkRiOyDbDuGG5szp5ETJT8KG1R5fN1lfNSLfZoRHV01SWtiQyfavuO7Am37p2pHYPrfceBY4OATxXumTx0BMzqgwudvvmISN_MMb8xO4LtOkX5SvkMJvFZdKytWwBN3R2peyLE15WhOF1UClUrOuePpStx6fXf_Tyrpt9GguZrqfWp0GptgAAAAAGzYoXSAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
-# Bot introduction messages - These can be customized as per your preference
-   
+
 BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
 votemode = {}
 autoclean = []
 confirmer = {}
-chatstats = {}
-userstats = {}
-clean = {}
 
-autoclean = []
+
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/6d585197af34afd4bb740.jpg"
+    "START_IMG_URL", "https://i.ibb.co/XF9fpFf/photo-2024-09-14-04-14-05-7414347282251776004.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/f6b2e18ecae7ffb6a9c88.jpg"
+    "PING_IMG_URL", "https://i.ibb.co/B2gGTG0/photo-2024-09-14-04-06-37-7414345353811460116.jpg"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/6d585197af34afd4bb740.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/7adee139f0639c400e1b8.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/9e14789c344a3c983aca5.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/9e14789c344a3c983aca5.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/6d585197af34afd4bb740.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/6d585197af34afd4bb740.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/9e14789c344a3c983aca5.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/6d585197af34afd4bb740.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/6d585197af34afd4bb740.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/6d585197af34afd4bb740.jpg"
+PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
+STATS_IMG_URL = "https://i.ibb.co/pjPB26t/photo-2024-09-14-04-15-26-7414347630144126980.jpg"
+TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
+SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
+YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
 
 
 def time_to_seconds(time):
@@ -107,8 +100,7 @@ def time_to_seconds(time):
 
 
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
-SONG_DOWNLOAD_DURATION_LIMIT = int(
-    time_to_seconds(f"{SONG_DOWNLOAD_DURATION}:00"))
+
 
 if SUPPORT_CHANNEL:
     if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
@@ -121,3 +113,4 @@ if SUPPORT_CHAT:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
         )
+        
