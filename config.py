@@ -11,7 +11,7 @@ API_ID = int(getenv("API_ID", 18349663))
 API_HASH = getenv("API_HASH", "1227a714a157e2056cc81fa81a7859c3")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "6574241781:AAEIQl0ORa86X5kQrqo4lpcn4IouFhf0Y_o")
+BOT_TOKEN = getenv("BOT_TOKEN", "7859851703:AAGVXWBV-0FJdkFQ-A9vRv5gXHBkdJ2x5_I")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://debojitbbb0:NgiJdMgZ1VilczTq@cluster0.xpvhh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -19,7 +19,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://debojitbbb0:NgiJdMgZ1VilczT
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1001921995918))
+LOGGER_ID = int(getenv("LOGGER_ID", -1001604334507))
 
 # Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 7332532623))
@@ -61,7 +61,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "BQGHuooAI_yfc1WuYt0FXpZE5KIto2NXBPL1yRPGzo7AA7wkVUesU8DW084YblkpVMPFgnRE7biXCd3TKl0dE5mjY4yqGdqxnkTMwBa7oehoLgguecnYUdVe5nt4W8ju4EBQYHZ4OXvcv8w5pCsI8w7ldwWsDvKFBDo3E--gqAVkRiOyDbDuGG5szp5ETJT8KG1R5fN1lfNSLfZoRHV01SWtiQyfavuO7Am37p2pHYPrfceBY4OATxXumTx0BMzqgwudvvmISN_MMb8xO4LtOkX5SvkMJvFZdKytWwBN3R2peyLE15WhOF1UClUrOuePpStx6fXf_Tyrpt9GguZrqfWp0GptgAAAAAGzYoXSAA")
+STRING1 = getenv("STRING_SESSION", "BQFhctIAgtgma7whRpN_J6AZcpVgbgHH9YFNLBt6x-oryurq3fjIJx-c7HGMTD6-FCIiX0h43aeMm97QVdr3Ru5PL4qYdvYVrxcPYoDFHgRKAX0vsego-20vqYqWIqCU1jEAm0JgAMFLf7kbxw0WsTC4-ThjTbm2hWdpXAfzl31ZOMCGewlp52suDNz8uq908VHmrIsPgXqmo3fO2qGWnKXwHvPl2fDjq9w2cUv627MfxWew7CpAmJf-5braWe533CcVPlzXDNq6_Eh-IPleN6piFYPlfM33uA4oB4YV11XDUjo58F12x7sF4iDNz4EgslNw5suXjdsVYvNR2Bf0lhwzznBKIwAAAAG8qtrzAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
