@@ -82,7 +82,7 @@ KRISHtg/queenmusicbot is a ✨ _special_ ✨ repository because its README.md (t
 
 ### 🛠 Commands & Usage
 
-The Aviax Music Bot offers a range of commands to enhance your music listening experience on Telegram:
+The AnonXMusic1 Bot offers a range of commands to enhance your music listening experience on Telegram:
 
 | Command                 | Description                                 |
 |-------------------------|---------------------------------------------|
