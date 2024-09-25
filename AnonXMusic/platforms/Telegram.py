@@ -6,8 +6,8 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-from AviaxMusic import app
-from AviaxMusic.utils.formatters import (
+from AnonXMusic import app
+from AnonXMusic.utils.formatters import (
     check_duration,
     convert_bytes,
     get_readable_time,
