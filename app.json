@@ -1,12 +1,12 @@
 {
-    "name": "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ",
+    "name": "⛦ 𝐁𝐫𝐚𝐧𝐝𝐫𝐝 𝐗 𝐌𝐮𝐬𝐢𝐜 ⛦",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
+    "logo": "https://te.legra.ph/file/62fa7c81c56c1ae31c844.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "AnonX",
+    "Brandrd",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -38,7 +38,7 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session from @StringFatherBot on Telegram.",
+        "description": "A Pyrogram v2 String Session from @BRANDEDSTRINGSESSION_BOT on Telegram.",
         "value": "",
         "required": true
       },
@@ -53,7 +53,7 @@
         "required": false
       },
       "LOGGER_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Don't Add Channel's ID.",
         "value": "",
         "required": true
       }
