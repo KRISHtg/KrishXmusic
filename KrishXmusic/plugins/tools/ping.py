@@ -3,11 +3,11 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
 
-from BrandrdXMusic import app
-from BrandrdXMusic.core.call import Hotty
-from BrandrdXMusic.utils import bot_sys_stats
-from BrandrdXMusic.utils.decorators.language import language
-from BrandrdXMusic.utils.inline import supp_markup
+from KrishXmusic import app
+from KrishXmusic.core.call import Hotty
+from KrishXmusic.utils import bot_sys_stats
+from KrishXmusic.utils.decorators.language import language
+from KrishXmusic.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 
