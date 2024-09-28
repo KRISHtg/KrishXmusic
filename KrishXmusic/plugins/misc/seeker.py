@@ -1,7 +1,7 @@
 import asyncio
 
-from BrandrdXMusic.misc import db
-from BrandrdXMusic.utils.database import get_active_chats, is_music_playing
+from KrishXmusic.misc import db
+from KrishXmusic.utils.database import get_active_chats, is_music_playing
 
 
 async def timer():
