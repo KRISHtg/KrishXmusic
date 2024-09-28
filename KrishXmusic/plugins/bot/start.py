@@ -6,10 +6,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from BrandrdXMusic import app
-from BrandrdXMusic.misc import _boot_
-from BrandrdXMusic.plugins.sudo.sudoers import sudoers_list
-from BrandrdXMusic.utils.database import (
+from KrishXmusic import app
+from KrishXmusic.misc import _boot_
+from KrishXmusic.plugins.sudo.sudoers import sudoers_list
+from KrishXmusic.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -17,9 +17,9 @@ from BrandrdXMusic.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from BrandrdXMusic.utils.decorators.language import LanguageStart
-from BrandrdXMusic.utils.formatters import get_readable_time
-from BrandrdXMusic.utils.inline import help_pannel, private_panel, start_panel
+from KrishXmusic.utils.decorators.language import LanguageStart
+from KrishXmusic.utils.formatters import get_readable_time
+from KrishXmusic.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
