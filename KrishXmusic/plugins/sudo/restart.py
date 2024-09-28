@@ -12,7 +12,7 @@ from pyrogram import filters
 import config
 from KrishXmusic import app
 from KrishXmusic.misc import HAPP, SUDOERS, XCB
-from BrandrdXMusic.utils.database import (
+from KrishXmusic.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
