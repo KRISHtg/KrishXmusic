@@ -20,9 +20,9 @@ from pytgcalls.types import (
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from BrandrdXMusic import LOGGER, YouTube, app
-from BrandrdXMusic.misc import db
-from BrandrdXMusic.utils.database import (
+from KrishXmusic import LOGGER, YouTube, app
+from KrishXmusic.misc import db
+from KrishXmusic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -34,11 +34,11 @@ from BrandrdXMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from BrandrdXMusic.utils.exceptions import AssistantErr
-from BrandrdXMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from BrandrdXMusic.utils.inline.play import stream_markup, stream_markup2
-from BrandrdXMusic.utils.stream.autoclear import auto_clean
-from BrandrdXMusic.utils.thumbnails import get_thumb
+from KrishXmusic.utils.exceptions import AssistantErr
+from KrishXmusic.utils.formatters import check_duration, seconds_to_min, speed_converter
+from KrishXmusic.utils.inline.play import stream_markup, stream_markup2
+from KrishXmusic.utils.stream.autoclear import auto_clean
+from KrishXmusic.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
