@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from KrishXmusic import app
 from KrishXmusic.utils.database import get_loop, set_loop
 from KrishXmusic.utils.decorators import AdminRightsCheck
-from BrandrdXMusic.utils.inline import close_markup
+from KrishXmusic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
