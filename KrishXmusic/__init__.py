@@ -4,7 +4,6 @@ from KrishXmusic.core.git import git
 from KrishXmusic.core.userbot import Userbot
 from KrishXmusic.misc import dbb, heroku
 
-from SafoneAPI import SafoneAPI
 from .logging import LOGGER
 
 dirr()
