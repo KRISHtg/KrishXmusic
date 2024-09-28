@@ -4,15 +4,15 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from BrandrdXMusic import app
-from BrandrdXMusic.core.call import Hotty, autoend
-from BrandrdXMusic.utils.database import get_client, is_active_chat, is_autoend
+from KrishXmusic import app
+from KrishXmusic.core.call import Hotty, autoend
+from KrishXmusic.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from BrandrdXMusic.core.userbot import assistants
+            from KrishXmusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
