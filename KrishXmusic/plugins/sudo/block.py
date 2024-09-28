@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from BrandrdXMusic import app
-from BrandrdXMusic.misc import SUDOERS
-from BrandrdXMusic.utils.database import add_gban_user, remove_gban_user
-from BrandrdXMusic.utils.decorators.language import language
-from BrandrdXMusic.utils.extraction import extract_user
+from KrishXmusic import app
+from KrishXmusic.misc import SUDOERS
+from KrishXmusic.utils.database import add_gban_user, remove_gban_user
+from KrishXmusic.utils.decorators.language import language
+from KrishXmusic.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
