@@ -1,4 +1,4 @@
-from BrandrdXMusic.utils.mongo import db
+from KrishXmusic.utils.mongo import db
 
 filters = db.filters["filters"] 
 
