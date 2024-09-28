@@ -4,17 +4,17 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from BrandrdXMusic import app
-from BrandrdXMusic.misc import SUDOERS
-from BrandrdXMusic.utils.database import (
+from KrishXmusic import app
+from KrishXmusic.misc import SUDOERS
+from KrishXmusic.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from BrandrdXMusic.utils.decorators.language import language
-from BrandrdXMusic.utils.formatters import alpha_to_int
+from KrishXmusic.utils.decorators.language import language
+from KrishXmusic.utils.formatters import alpha_to_int
 from config import adminlist
 
 IS_BROADCASTING = False
