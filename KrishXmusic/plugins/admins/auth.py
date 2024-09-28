@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from BrandrdXMusic import app
-from BrandrdXMusic.utils import extract_user, int_to_alpha
+from KrishXmusic import app
+from KrishXmusic.utils import extract_user, int_to_alpha
 from BrandrdXMusic.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from BrandrdXMusic.utils.decorators import AdminActual, language
-from BrandrdXMusic.utils.inline import close_markup
+from KrishXmusic.utils.decorators import AdminActual, language
+from KrishXmusic.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
