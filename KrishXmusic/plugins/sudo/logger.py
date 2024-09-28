@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from BrandrdXMusic import app
-from BrandrdXMusic.misc import SUDOERS
-from BrandrdXMusic.utils.database import add_off, add_on
-from BrandrdXMusic.utils.decorators.language import language
+from KrishXmusic import app
+from KrishXmusic.misc import SUDOERS
+from KrishXmusic.utils.database import add_off, add_on
+from KrishXmusic.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
