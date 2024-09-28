@@ -3,7 +3,7 @@ from pyrogram.types import Message
 
 from KrishXmusic import app
 from KrishXmusic.utils import extract_user, int_to_alpha
-from BrandrdXMusic.utils.database import (
+from KrishXmusic.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
