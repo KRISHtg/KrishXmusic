@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
-from BrandrdXMusic import app
-from BrandrdXMusic.utils.database import set_cmode
-from BrandrdXMusic.utils.decorators.admins import AdminActual
+from KrishXmusic import app
+from KrishXmusic.utils.database import set_cmode
+from KrishXmusic.utils.decorators.admins import AdminActual
 from config import BANNED_USERS
 
 
