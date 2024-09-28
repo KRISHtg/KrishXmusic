@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from BrandrdXMusic import LOGGER, app, userbot
-from BrandrdXMusic.core.call import Hotty
-from BrandrdXMusic.misc import sudo
-from BrandrdXMusic.plugins import ALL_MODULES
-from BrandrdXMusic.utils.database import get_banned_users, get_gbanned
+from KrishXmusic import LOGGER, app, userbot
+from KrishXmusic.core.call import Hotty
+from KrishXmusic.misc import sudo
+from KrishXmusic.plugins import ALL_MODULES
+from KrishXmusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -35,21 +35,21 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("BrandrdXMusic.plugins" + all_module)
-    LOGGER("BrandrdXMusic.plugins").info("Successfully Imported Modules...")
+        importlib.import_module("KrishXmusic.plugins" + all_module)
+    LOGGER("KrishXmusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
     await Hotty.start()
     try:
         await Hotty.stream_call("https://graph.org/file/e999c40cb700e7c684b75.mp4")
     except NoActiveGroupCall:
-        LOGGER("BrandrdXMusic").error(
+        LOGGER("KrishXmusic").error(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
         )
         exit()
     except:
         pass
     await Hotty.decorators()
-    LOGGER("BrandrdXMusic").info(
+    LOGGER("KrishXmusic").info(
         "ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ @BRANDED_PAID_CC ᴊᴏɪɴ @BRANDRD_BOT , @BRANDED_WORLD ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ"
     )
     await idle()
