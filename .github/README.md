@@ -80,20 +80,7 @@ KRISHtg/queenmusicbot is a ✨ _special_ ✨ repository because its README.md (t
 
 ---
 
-### 🛠 Commands & Usage
-
-The AnonXMusic1 Bot offers a range of commands to enhance your music listening experience on Telegram:
-
-| Command                 | Description                                 |
-|-------------------------|---------------------------------------------|
-| `/play <song name>`     | Play the requested song.                    |
-| `/pause`                | Pause the currently playing song.           |
-| `/resume`               | Resume the paused song.                     |
-| `/skip`                 | Move to the next song in the queue.         |
-| `/stop`                 | Stop the bot and clear the queue.           |
-| `/queue`                | Display the list of songs in the queue.     |
-
-For a full list of commands, use `/help` in [telegram](https://t.me/+9U8Td9WZ2dk1ZGU1).
+ [TELEGRAM GROUP](https://t.me/+9U8Td9WZ2dk1ZGU1).
 
 ---
 
