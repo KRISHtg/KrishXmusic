@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from BrandrdXMusic import app
-from BrandrdXMusic.core.call import Hotty
-from BrandrdXMusic.utils.database import is_music_playing, music_off
-from BrandrdXMusic.utils.decorators import AdminRightsCheck
-from BrandrdXMusic.utils.inline import close_markup
+from KrishXmusic import app
+from KrishXmusic.core.call import Hotty
+from KrishXmusic.utils.database import is_music_playing, music_off
+from KrishXmusic.utils.decorators import AdminRightsCheck
+from KrishXmusic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
