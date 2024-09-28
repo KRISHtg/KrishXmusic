@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from KrishXmusic import YouTube, app
 from KrishXmusic.core.call import Hotty
 from KrishXmusic.misc import SUDOERS, db
-from BrandrdXMusic.utils.database import (
+from KrishXmusic.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -19,7 +19,7 @@ from BrandrdXMusic.utils.database import (
 )
 from KrishXmusic.utils.decorators.language import languageCB
 from KrishXmusic.utils.formatters import seconds_to_min
-from BrandrdXMusic.utils.inline import (
+from KrishXmusic.utils.inline import (
     close_markup,
     stream_markup,
     stream_markup2, 
