@@ -2,8 +2,8 @@ import time
 
 import psutil
 
-from BrandrdXMusic.misc import _boot_
-from BrandrdXMusic.utils.formatters import get_readable_time
+from KrishXmusic.misc import _boot_
+from KrishXmusic.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():
