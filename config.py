@@ -15,7 +15,7 @@ API_HASH = getenv("API_HASH", "ae5eac8daa75014fa597f5e1ca0d8655")
 BOT_TOKEN = getenv("BOT_TOKEN", "8152673963:AAGmmeW-wAYaEZooTL1eHluLjC0xLZCdZaQ")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "MONGO_DB_URI", "mongodb+srv://Krishopkyt:Krishopkyt@opkrish.jw1hi.mongodb.net/?retryWrites=true&w=majority&appName=Opkrish")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Krishopkyt:Krishopkyt@opkrish.jw1hi.mongodb.net/?retryWrites=true&w=majority&appName=Opkrish")
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "krish")
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
