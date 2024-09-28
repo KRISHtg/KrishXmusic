@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from BrandrdXMusic import YouTube, app
-from BrandrdXMusic.utils.channelplay import get_channeplayCB
-from BrandrdXMusic.utils.decorators.language import languageCB
-from BrandrdXMusic.utils.stream.stream import stream
+from KrishXmusic import YouTube, app
+from KrishXmusic.utils.channelplay import get_channeplayCB
+from KrishXmusic.utils.decorators.language import languageCB
+from KrishXmusic.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
