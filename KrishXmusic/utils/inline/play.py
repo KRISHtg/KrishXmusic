@@ -2,8 +2,8 @@ import math
 
 from pyrogram.types import InlineKeyboardButton
 
-from BrandrdXMusic.utils.formatters import time_to_seconds
-from BrandrdXMusic import app
+from KrishXmusic.utils.formatters import time_to_seconds
+from KrishXmusic import app
 
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
