@@ -2,9 +2,9 @@ import time, re
 from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
-from BrandrdXMusic import app
-from BrandrdXMusic.mongo.readable_time import get_readable_time
-from BrandrdXMusic.mongo.afkdb import add_afk, is_afk, remove_afk
+from KrishXmusic import app
+from KrishXmusic.mongo.readable_time import get_readable_time
+from KrishXmusic.mongo.afkdb import add_afk, is_afk, remove_afk
 
 
 @app.on_message(filters.command(["afk", "brb"], prefixes=["/", "!"]))
