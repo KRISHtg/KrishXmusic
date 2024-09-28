@@ -10,10 +10,10 @@ from pyrogram.types import (
     Message,
 )
 from config import LOGGER_ID as LOG_GROUP_ID
-from BrandrdXMusic import app
-from BrandrdXMusic.core.userbot import Userbot
-from BrandrdXMusic.utils.database import delete_served_chat
-from BrandrdXMusic.utils.database import get_assistant
+from KrishXmusic import app
+from KrishXmusic.core.userbot import Userbot
+from KrishXmusic.utils.database import delete_served_chat
+from KrishXmusic.utils.database import get_assistant
 
 
 photo = [
