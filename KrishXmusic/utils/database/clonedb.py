@@ -1,4 +1,4 @@
-from BrandrdXMusic.core.mongo import mongodb, pymongodb
+from KrishXmusic.core.mongo import mongodb, pymongodb
 from typing import Dict, List, Union
 
 cloneownerdb = mongodb.cloneownerdb
