@@ -24,7 +24,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", "-1001921995918"))
 
-# Get this value from @BRANDRD_ROBOT on Telegram by /id
+# Get this value from @KrishXmusic on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "6745609407"))
 
 ## Fill these variables if you're deploying on heroku.
@@ -72,7 +72,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 
 
-# Get your pyrogram v2 session from @BRANDEDSTRINGSESSION_BOT on Telegram
+# Get your pyrogram v2 session from @KrishXmusic on Telegram
 STRING1 = getenv("STRING_SESSION", "BQFE4E4AqTDIRJzgXnkW6P6cmaGoODblWcgclDHb3DX5HjtPaNDWP6iOlFXV9HGJjax-ScODQ7GMzOnEidBrJfmU9GfvPmwmEpKuBaONr1_V5lvtwGBQjPQAFB95d8jxG8YO9lx7lJHqml3I4AyDxZmCRz-KIuR52Cc3sd86leTtIWSHnX000HU9BTvxBldMKLOfrhAMR-IHB51EoPj8Oz-rH82gfx1k3KAVX5qX3QGPP2rf-3v-PVsi_QEsc77Lg0soZ39uj0JNTa28c8Uyh1yCXk0o-d3cTRkXmRDvvyiCy0F0vcXK5RwrZrqmr_i5cPCJG6g8Q61FC6tf1AppsNXhy0zz8AAAAAGvZ6kYAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
