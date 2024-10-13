@@ -1,5 +1,4 @@
 import re
-import os
 from os import getenv
 
 from dotenv import load_dotenv
@@ -8,24 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", 21979881))
-API_HASH = getenv("API_HASH", "ae5eac8daa75014fa597f5e1ca0d8655")
+API_ID = int(getenv("API_ID",24427099))
+API_HASH = getenv("API_HASH","facb3d94c969531841dba366a516c07c")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "7531498433:AAGl0UZRapY8dnCQr4wGQtLg3B-XITzqqkY")
+BOT_TOKEN = getenv("BOT_TOKEN","7205846279:AAGPnz5Yh4uG8fo9Q967DZG4NKQ7GJfdvD4")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Krishopkyt:Krishopkyt@opkrish.jw1hi.mongodb.net/?retryWrites=true&w=majority&appName=Opkrish")
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "krish")
-PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://EraMusic:EraMusic@era0music.9zhsns6.mongodb.net/?retryWrites=true&w=majority")
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1500))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1001921995918"))
+LOGGER_ID = int(getenv("LOGGER_ID", -1001685619614))
 
-# Get this value from @KrishXmusic on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "6745609407"))
+# Get this value from @FallenxBot on Telegram by /id
+OWNER_ID = int(getenv("OWNER_ID", 7325309012))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -35,45 +32,37 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/KRISHtg/AnonXMusic2",
+    "https://github.com/Percymusic/MUSICX",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/KRISHBOTS")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+Kus9t8btLPRhYzll")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/PERCY_SUPPORT")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/HINDI_AND_ENGLISH_CHATTING_ZONE")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
 
-# Auto Gcast/Broadcast Handler (True = broadcast on , False = broadcast off During Hosting, Dont Do anything here.)
-AUTO_GCAST = os.getenv("AUTO_GCAST")
-
-# Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
-AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "bcfe26b0ebc3428882a0b5fb3e872473")
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "907c6a054c214005aeae1fd752273cc4")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
-SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 
-SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
-SONG_DOWNLOAD_DURATION_LIMIT = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "2000"))
 
 # Telegram audio and video file size limit (in bytes)
-TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
+TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 2605405090))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 2605405090))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 
 
-# Get your pyrogram v2 session from @KrishXmusic on Telegram
-STRING1 = getenv("STRING_SESSION", "BQFE4E4AqTDIRJzgXnkW6P6cmaGoODblWcgclDHb3DX5HjtPaNDWP6iOlFXV9HGJjax-ScODQ7GMzOnEidBrJfmU9GfvPmwmEpKuBaONr1_V5lvtwGBQjPQAFB95d8jxG8YO9lx7lJHqml3I4AyDxZmCRz-KIuR52Cc3sd86leTtIWSHnX000HU9BTvxBldMKLOfrhAMR-IHB51EoPj8Oz-rH82gfx1k3KAVX5qX3QGPP2rf-3v-PVsi_QEsc77Lg0soZ39uj0JNTa28c8Uyh1yCXk0o-d3cTRkXmRDvvyiCy0F0vcXK5RwrZrqmr_i5cPCJG6g8Q61FC6tf1AppsNXhy0zz8AAAAAGvZ6kYAA")
+# Get your pyrogram v2 session from @StringFatherBot on Telegram
+STRING1 = getenv("STRING_SESSION", "BQF0ulsAU8NlfvP9fLTj5684ojrq4cI6I6ahM0D-KRSstqPEiymkiWVsU3o7IFGLnhcDyRczFOE1Oy1ggPj1WpBWc81P3kQoOhP4dNtro9lFxQ3mh2Z4H1GoGMsd2l1ZSmpfIdpbOLa8S5O-JWpJSrTTInKxD4h_TzwsKF8h-DL5sdXI6SNT1WPW_W36_PIWwZ7p3KYYWR07K8Kz9VlINma8oy6X0iPMqnCgLheU4j7ljW3C2UmiWu_wbOoEqcxwJLQy54HFmYbBTsF4qvwgE8P5bt4-AmmLdNkzPpWR316WEXg03XG5dMyrEo2qrHrJxvgEPFPAb-oXUzJHQqeoUowhzL19CAAAAAHHlbm0AA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -89,21 +78,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/g1oph9.jpg"
+    "START_IMG_URL", "https://te.legra.ph/file/62262805b1c434251fb7d.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/e2dbc2.jpg"
+    "PING_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/5gvrca.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/qt7y1v.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/ol4kru.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/bzojlb.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/rdevf1.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/rdevf1.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/b3gaf7.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/ka97p1.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/8hvkyx.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/orvrya.jpg"
+PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
+STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
+TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
+SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
+YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
 
 
 def time_to_seconds(time):
